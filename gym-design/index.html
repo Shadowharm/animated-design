@@ -61,7 +61,7 @@
       </div>
     </div>
     <div class="hero__scroll">
-      <span>Скролл</span>
+      <span>Scroll</span>
       <div class="hero__scroll-line"></div>
     </div>
   </section>
@@ -299,7 +299,7 @@
             Персональные тренировки
           </li>
         </ul>
-        <a href="#" class="pricing__card-btn btn btn--ghost">Выбрать</a>
+        <a href="#" class="pricing__card-btn btn btn--ghost open-modal" data-plan="Базовый — 2 900 руб/мес">Выбрать</a>
       </div>
 
       <div class="pricing__card pricing__card--featured" data-animation="scale-up">
@@ -338,7 +338,7 @@
             Персональные тренировки
           </li>
         </ul>
-        <a href="#" class="pricing__card-btn btn btn--primary magnetic-btn">
+        <a href="#" class="pricing__card-btn btn btn--primary magnetic-btn open-modal" data-plan="Стандарт — 4 500 руб/мес">
           <span>Выбрать</span>
         </a>
       </div>
@@ -378,7 +378,7 @@
             4 персональные тренировки
           </li>
         </ul>
-        <a href="#" class="pricing__card-btn btn btn--ghost">Выбрать</a>
+        <a href="#" class="pricing__card-btn btn btn--ghost open-modal" data-plan="Премиум — 7 900 руб/мес">Выбрать</a>
       </div>
     </div>
   </section>
@@ -392,7 +392,7 @@
     <div class="cta__content" data-animation="fade-up">
       <h2 class="cta__title">Готов начать?</h2>
       <p class="cta__text">Первая тренировка — бесплатно. Приходи, попробуй и убедись сам</p>
-      <a href="#" class="btn btn--primary btn--large magnetic-btn">
+      <a href="#" class="btn btn--primary btn--large magnetic-btn open-modal" data-plan="">
         <span>Записаться на пробную тренировку</span>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -431,6 +431,83 @@
       <span>&copy; 2026 ФОРМА. Все права защищены.</span>
     </div>
   </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__backdrop"></div>
+    <div class="modal__window">
+      <button class="modal__close" id="modalClose" aria-label="Закрыть">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div class="modal__header">
+        <span class="modal__label">Запись в зал</span>
+        <h3 class="modal__title" id="modalTitle">Начни тренироваться<br><span class="text-accent">сегодня</span></h3>
+      </div>
+
+      <form class="modal__form" id="modalForm" novalidate>
+        <!-- Абонемент -->
+        <div class="modal__field">
+          <label class="modal__field-label" for="planSelect">Абонемент</label>
+          <div class="modal__select-wrap">
+            <select class="modal__select" id="planSelect" name="plan">
+              <option value="">— Пробная тренировка (бесплатно) —</option>
+              <option value="Базовый — 2 900 руб/мес">Базовый — 2 900 руб/мес</option>
+              <option value="Стандарт — 4 500 руб/мес">Стандарт — 4 500 руб/мес</option>
+              <option value="Премиум — 7 900 руб/мес">Премиум — 7 900 руб/мес</option>
+            </select>
+            <svg class="modal__select-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+
+        <!-- Имя -->
+        <div class="modal__field">
+          <label class="modal__field-label" for="nameInput">Ваше имя</label>
+          <input
+            class="modal__input"
+            type="text"
+            id="nameInput"
+            name="name"
+            placeholder="Иван Иванов"
+            autocomplete="name"
+            maxlength="60"
+          >
+          <span class="modal__field-error" id="nameError"></span>
+        </div>
+
+        <!-- Телефон -->
+        <div class="modal__field">
+          <label class="modal__field-label" for="phoneInput">Номер телефона</label>
+          <input
+            class="modal__input"
+            type="tel"
+            id="phoneInput"
+            name="phone"
+            placeholder="+7 (___) ___-__-__"
+            autocomplete="tel"
+          >
+          <span class="modal__field-error" id="phoneError"></span>
+        </div>
+
+        <button type="submit" class="modal__submit btn btn--primary">
+          <span>Отправить заявку</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+
+        <p class="modal__privacy">Нажимая кнопку, вы соглашаетесь с&nbsp;<a href="#">политикой конфиденциальности</a></p>
+      </form>
+
+      <!-- Success state -->
+      <div class="modal__success" id="modalSuccess">
+        <div class="modal__success-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3 class="modal__success-title">Заявка принята!</h3>
+        <p class="modal__success-text">Мы свяжемся с вами в течение 15 минут и подберём удобное время</p>
+        <button class="btn btn--ghost" id="modalSuccessClose">Закрыть</button>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>

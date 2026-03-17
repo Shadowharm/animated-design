@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="479c5765-4e58-43a2-b0f2-f7999d2e6f17" name="Changes" comment="refine responsive design and animations for iphone layout">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="479c5765-4e58-43a2-b0f2-f7999d2e6f17" name="Changes" comment="add landing page and animations for &quot;ФОРМА&quot; gym">
+      <change beforePath="$PROJECT_DIR$/gym-design/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/gym-design/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym-design/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gym-design/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym-design/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/gym-design/js/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1773675250996</updated>
       <workItem from="1773675252165" duration="5487000" />
-      <workItem from="1773727422811" duration="10376000" />
+      <workItem from="1773727422811" duration="11030000" />
     </task>
     <task id="LOCAL-00001" summary="add iphone design">
       <option name="closed" value="true" />
@@ -124,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773736913762</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add landing page and animations for &quot;ФОРМА&quot; gym">
+      <option name="closed" value="true" />
+      <created>1773748453655</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1773748453655</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +158,8 @@
     <MESSAGE value="update animation settings for iphone design" />
     <MESSAGE value="revamp iphone design with updated animations, refined styles, and improved copy" />
     <MESSAGE value="refine responsive design and animations for iphone layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="refine responsive design and animations for iphone layout" />
+    <MESSAGE value="add landing page and animations for &quot;ФОРМА&quot; gym" />
+    <option name="LAST_COMMIT_MESSAGE" value="add landing page and animations for &quot;ФОРМА&quot; gym" />
     <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
   </component>
 </project>

@@ -48,6 +48,7 @@
     initScrollAnimations()
     initGallery()
     initMagneticButtons()
+    initModal()
   }
 
   /* ── Lenis Smooth Scroll ──────────────── */
@@ -320,6 +321,158 @@
     })
   }
 
+
+  /* ── Modal Form ───────────────────────── */
+  function initModal() {
+    const modal      = document.getElementById('modal')
+    const backdrop   = modal.querySelector('.modal__backdrop')
+    const closeBtn   = document.getElementById('modalClose')
+    const form       = document.getElementById('modalForm')
+    const planSelect = document.getElementById('planSelect')
+    const nameInput  = document.getElementById('nameInput')
+    const phoneInput = document.getElementById('phoneInput')
+    const nameError  = document.getElementById('nameError')
+    const phoneError = document.getElementById('phoneError')
+    const successEl  = document.getElementById('modalSuccess')
+
+    // Open
+    document.querySelectorAll('.open-modal').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault()
+        const plan = btn.dataset.plan || ''
+        openModal(plan)
+      })
+    })
+
+    function openModal(plan) {
+      // Pre-select plan
+      if (plan) {
+        const opt = [...planSelect.options].find(o => o.value === plan)
+        if (opt) planSelect.value = plan
+      }
+
+      // Reset state
+      form.classList.remove('is-hidden')
+      successEl.classList.remove('is-visible')
+      clearErrors()
+
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth
+      modal.classList.add('is-open')
+      document.body.style.overflow = 'hidden'
+      document.body.style.paddingRight = scrollbarWidth + 'px'
+      document.getElementById('header').style.paddingRight =
+        'calc(var(--side-pad) + ' + scrollbarWidth + 'px)'
+      if (lenis) lenis.stop()
+
+      // Focus first interactive field after transition
+      setTimeout(() => nameInput.focus(), 400)
+    }
+
+    function closeModal() {
+      modal.classList.remove('is-open')
+      document.body.style.overflow = ''
+      document.body.style.paddingRight = ''
+      document.getElementById('header').style.paddingRight = ''
+      if (lenis) lenis.start()
+      // Reset form after close transition
+      setTimeout(() => {
+        form.style.display = ''
+        successEl.classList.remove('is-visible')
+        form.reset()
+        phoneInput.value = ''
+        clearErrors()
+      }, 400)
+    }
+
+    backdrop.addEventListener('click', closeModal)
+    closeBtn.addEventListener('click', closeModal)
+    document.getElementById('modalSuccessClose').addEventListener('click', closeModal)
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal()
+    })
+
+    // ── Name: auto-capitalize each word ──
+    nameInput.addEventListener('input', () => {
+      const pos = nameInput.selectionStart
+      const raw = nameInput.value
+      const capitalized = raw.replace(/(?:^|\s)\S/g, (c) => c.toUpperCase())
+      if (capitalized !== raw) {
+        nameInput.value = capitalized
+        nameInput.setSelectionRange(pos, pos)
+      }
+    })
+
+    // ── Phone mask: +7 (___) ___-__-__ ──
+    phoneInput.addEventListener('focus', () => {
+      if (!phoneInput.value) {
+        phoneInput.value = '+7 ('
+      }
+    })
+
+    phoneInput.addEventListener('input', handlePhoneMask)
+    phoneInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Backspace') {
+        e.preventDefault()
+        const v = phoneInput.value
+        // Don't delete past the prefix
+        if (v.length > 4) {
+          phoneInput.value = v.slice(0, -1)
+        }
+      }
+    })
+
+    function handlePhoneMask() {
+      // Extract only digits after country code
+      let digits = phoneInput.value.replace(/\D/g, '').slice(1) // strip leading 7
+      if (digits.length > 10) digits = digits.slice(0, 10)
+
+      let masked = '+7 ('
+      if (digits.length > 0) masked += digits.slice(0, 3)
+      if (digits.length >= 3) masked += ') ' + digits.slice(3, 6)
+      if (digits.length >= 6) masked += '-' + digits.slice(6, 8)
+      if (digits.length >= 8) masked += '-' + digits.slice(8, 10)
+
+      phoneInput.value = masked
+    }
+
+    // ── Validation ──
+    function clearErrors() {
+      nameInput.closest('.modal__field').classList.remove('has-error')
+      phoneInput.closest('.modal__field').classList.remove('has-error')
+      nameError.textContent = ''
+      phoneError.textContent = ''
+    }
+
+    function validate() {
+      let valid = true
+      clearErrors()
+
+      if (nameInput.value.trim().length < 2) {
+        nameInput.closest('.modal__field').classList.add('has-error')
+        nameError.textContent = 'Введите ваше имя'
+        valid = false
+      }
+
+      const phoneDigits = phoneInput.value.replace(/\D/g, '')
+      if (phoneDigits.length < 11) {
+        phoneInput.closest('.modal__field').classList.add('has-error')
+        phoneError.textContent = 'Введите полный номер телефона'
+        valid = false
+      }
+
+      return valid
+    }
+
+    // ── Submit ──
+    form.addEventListener('submit', (e) => {
+      e.preventDefault()
+      if (!validate()) return
+
+      // Show success, hide form — user closes modal manually
+      form.style.display = 'none'
+      successEl.classList.add('is-visible')
+    })
+  }
 
   /* ── Magnetic Buttons ─────────────────── */
   function initMagneticButtons() {
