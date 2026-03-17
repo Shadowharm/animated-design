@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AIAssistantCustomInstructionsStorage">
+    <option name="instructions">
+      <map>
+        <entry key="AIAssistant.VCS.GenerateCommitMessage">
+          <value>
+            <AIAssistantStoredInstruction>
+              <option name="actionId" value="AIAssistant.VCS.GenerateCommitMessage" />
+              <option name="content" value="You generate Git commit messages following the Conventional Commits specification.&#10;&#10;Rules:&#10;1. The commit message must start with one of the allowed types:&#10;   - feat&#10;   - fix&#10;   - refactor&#10;   - docs&#10;   - style&#10;   - test&#10;   - chore&#10;   - perf&#10;   - build&#10;   - ci&#10;&#10;2. Format:&#10;   type: short description&#10;&#10;3. The description must:&#10;   - be concise and clear&#10;   - be written in English&#10;   - use lowercase&#10;   - not end with a period&#10;   - describe what changed, not how&#10;&#10;4. The total length should be 1 line, optionally 2 lines max if clarification is needed.&#10;&#10;5. Do not include explanations or extra text outside the commit message.&#10;&#10;Input you receive:&#10;- A diff, list of changed files, or description of the change.&#10;&#10;Output:&#10;Return only the commit message following the rules above." />
+            </AIAssistantStoredInstruction>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="479c5765-4e58-43a2-b0f2-f7999d2e6f17" name="Changes" comment="add landing page and animations for &quot;ФОРМА&quot; gym">
-      <change beforePath="$PROJECT_DIR$/gym-design/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/gym-design/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-design/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gym-design/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-design/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/gym-design/js/app.js" afterDir="false" />
-    </list>
+    <list default="true" id="479c5765-4e58-43a2-b0f2-f7999d2e6f17" name="Changes" comment="add modal functionality for plan selection and trial sign-ups" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +78,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "ml.llm.AIAssistantPromptsLibrary",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -92,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1773675250996</updated>
       <workItem from="1773675252165" duration="5487000" />
-      <workItem from="1773727422811" duration="11030000" />
+      <workItem from="1773727422811" duration="11395000" />
     </task>
     <task id="LOCAL-00001" summary="add iphone design">
       <option name="closed" value="true" />
@@ -134,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773748453655</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add modal functionality for plan selection and trial sign-ups">
+      <option name="closed" value="true" />
+      <created>1773750901986</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1773750901986</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +178,8 @@
     <MESSAGE value="revamp iphone design with updated animations, refined styles, and improved copy" />
     <MESSAGE value="refine responsive design and animations for iphone layout" />
     <MESSAGE value="add landing page and animations for &quot;ФОРМА&quot; gym" />
-    <option name="LAST_COMMIT_MESSAGE" value="add landing page and animations for &quot;ФОРМА&quot; gym" />
+    <MESSAGE value="add modal functionality for plan selection and trial sign-ups" />
+    <option name="LAST_COMMIT_MESSAGE" value="add modal functionality for plan selection and trial sign-ups" />
     <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
   </component>
 </project>

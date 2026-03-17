@@ -484,16 +484,18 @@ ul {
 .stats__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
   gap: 1px;
   background: var(--border);
   border: 1px solid var(--border);
 }
 
 .stats__item {
-  display: flex;
-  flex-direction: column;
+  grid-row: span 2;
+  display: grid;
+  grid-template-rows: subgrid;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
   padding: clamp(24px, 4vw, 48px) clamp(12px, 2vw, 24px);
   background: var(--bg-surface);
   text-align: center;
