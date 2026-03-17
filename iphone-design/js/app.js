@@ -1,7 +1,6 @@
 /* ===== CONFIG ===== */
 const FRAME_COUNT = 151;
-const FRAME_SPEED = 2.0;
-const IMAGE_SCALE = 0.88;
+const FRAME_SPEED = 1.6;
 const FRAME_PATH = (i) => `frames/frame_${String(i).padStart(4, "0")}.webp`;
 
 /* ===== STATE ===== */
@@ -174,9 +173,11 @@ function initScrollAnimations() {
     onUpdate: (self) => {
       const p = self.progress;
 
-      // Frame playback
-      const accelerated = Math.min(p * FRAME_SPEED, 1);
-      const index = Math.min(Math.floor(accelerated * FRAME_COUNT), FRAME_COUNT - 1);
+      // Frame playback — ping-pong: phone spins forward then reverses, looping across full scroll
+      const t = p * FRAME_SPEED;          // total progress, can exceed 1
+      const cycle = t % 2;                // sawtooth 0→2→0→2…
+      const ping = cycle <= 1 ? cycle : 2 - cycle; // triangle wave 0→1→0→1…
+      const index = Math.min(Math.floor(ping * FRAME_COUNT), FRAME_COUNT - 1);
       if (index !== currentFrame) {
         currentFrame = index;
         requestAnimationFrame(() => drawFrame(currentFrame));
@@ -195,13 +196,6 @@ function initScrollAnimations() {
       const radius = wipeProgress * 80;
       canvasWrap.style.clipPath = `circle(${radius}% at 50% 50%)`;
       canvasWrap.style.opacity = wipeProgress > 0 ? 1 : 0;
-
-      // Header show/hide
-      if (p > 0.05) {
-        header.classList.add("visible");
-      } else {
-        header.classList.remove("visible");
-      }
 
       // Section visibility
       updateSections(p);
