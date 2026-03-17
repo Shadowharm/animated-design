@@ -66,12 +66,13 @@ function drawFrame(index) {
   const iw = img.naturalWidth;
   const ih = img.naturalHeight;
 
-  // Use contain mode to show the full phone, then center it in the right portion
-  const scale = Math.min(cw / iw, ch / ih) * 0.92;
+  const isMobile = window.innerWidth <= 768;
+  // On mobile: larger fill factor + perfectly centered; on desktop: slight right shift for composition
+  const fillFactor = isMobile ? 1.35 : 0.92;
+  const scale = Math.min(cw / iw, ch / ih) * fillFactor;
   const dw = iw * scale;
   const dh = ih * scale;
-  // Shift phone slightly right within the canvas for better composition with left text
-  const dx = (cw - dw) / 2 + cw * 0.05;
+  const dx = (cw - dw) / 2 + (isMobile ? 0 : cw * 0.05);
   const dy = (ch - dh) / 2;
 
   ctx.fillStyle = canvasBgColor;
