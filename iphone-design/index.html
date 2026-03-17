@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone 13 Pro — Designed to Make a Difference</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-brand">iPhone 13 Pro</div>
+      <div class="loader-progress">
+        <div id="loader-bar"></div>
+      </div>
+      <div id="loader-percent">0%</div>
+    </div>
+  </div>
+
+  <!-- Fixed Header -->
+  <header class="site-header">
+    <nav>
+      <a href="#" class="logo">iPhone <span>13 Pro</span></a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#camera">Camera</a>
+        <a href="#specs">Specs</a>
+        <a href="#" class="nav-cta">Buy Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-standalone" id="hero">
+    <div class="hero-content">
+      <span class="section-label">Introducing</span>
+      <h1 class="hero-heading">
+        <span class="word">Oh.</span>
+        <span class="word">So.</span>
+        <span class="word">Pro.</span>
+      </h1>
+      <p class="hero-tagline">A dramatically more powerful camera system. A display so responsive, every interaction feels new again. The world's fastest smartphone chip. And a battery life that goes and goes.</p>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll to explore</span>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Canvas (right side, fixed) -->
+  <div class="canvas-wrap" id="canvas-wrap">
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <!-- Dark Overlay -->
+  <div id="dark-overlay"></div>
+
+  <!-- Marquee -->
+  <div class="marquee-wrap" id="marquee-1" data-scroll-speed="-20">
+    <div class="marquee-text">PRO CAMERA SYSTEM &nbsp;&bull;&nbsp; A15 BIONIC &nbsp;&bull;&nbsp; PROMOTION DISPLAY &nbsp;&bull;&nbsp; CINEMATIC MODE &nbsp;&bull;&nbsp;</div>
+  </div>
+
+  <!-- Scroll Container -->
+  <div id="scroll-container">
+
+    <!-- Section 1: Pro Camera -->
+    <section class="scroll-section section-content align-left"
+             data-enter="10" data-leave="24" data-animation="slide-left" id="features">
+      <div class="section-inner">
+        <span class="section-label">001 / Camera System</span>
+        <h2 class="section-heading">Pro camera<br>system</h2>
+        <p class="section-body">New 77mm Telephoto, Ultra Wide with autofocus, and an all-new Wide camera with the largest sensor ever in an iPhone. Macro photography for mind-blowing close-ups.</p>
+      </div>
+    </section>
+
+    <!-- Section 2: Cinematic Mode -->
+    <section class="scroll-section section-content align-left"
+             data-enter="27" data-leave="40" data-animation="fade-up" id="camera">
+      <div class="section-inner">
+        <span class="section-label">002 / Cinematic Mode</span>
+        <h2 class="section-heading">Cinematic<br>Mode</h2>
+        <p class="section-body">A new way to shoot video with shallow depth of field and automatic focus changes. Just like the movies. Rack focus seamlessly and automatically.</p>
+      </div>
+    </section>
+
+    <!-- Section 3: Display -->
+    <section class="scroll-section section-content align-left"
+             data-enter="43" data-leave="56" data-animation="clip-reveal">
+      <div class="section-inner">
+        <span class="section-label">003 / ProMotion</span>
+        <h2 class="section-heading">Super Retina XDR<br>with ProMotion</h2>
+        <p class="section-body">A display that can ramp up to 120Hz when you need peak graphics performance — and ramp down to save power. Blazingly fast. Incredibly responsive.</p>
+      </div>
+    </section>
+
+    <!-- Section 4: Stats -->
+    <section class="scroll-section section-stats"
+             data-enter="60" data-leave="73" data-animation="stagger-up" id="specs">
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="stat-number" data-value="120" data-decimals="0">0</span>
+          <span class="stat-suffix">Hz</span>
+          <span class="stat-label">ProMotion display</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-value="6.7" data-decimals="1">0</span>
+          <span class="stat-suffix">"</span>
+          <span class="stat-label">Super Retina XDR</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-value="1000" data-decimals="0">0</span>
+          <span class="stat-suffix">nits</span>
+          <span class="stat-label">Max brightness (HDR)</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-value="28" data-decimals="0">0</span>
+          <span class="stat-suffix">hrs</span>
+          <span class="stat-label">Video playback</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: A15 Bionic -->
+    <section class="scroll-section section-content align-left"
+             data-enter="76" data-leave="88" data-animation="rotate-in">
+      <div class="section-inner">
+        <span class="section-label">005 / Performance</span>
+        <h2 class="section-heading">A15 Bionic.<br>World's fastest.</h2>
+        <p class="section-body">A15 Bionic is the world's fastest smartphone chip. It powers everything from Cinematic mode to the all-new display. And it's incredibly efficient for great battery life.</p>
+      </div>
+    </section>
+
+    <!-- Section 6: CTA -->
+    <section class="scroll-section section-content section-cta align-left"
+             data-enter="91" data-leave="100" data-animation="scale-up" data-persist="true">
+      <div class="section-inner">
+        <span class="section-label">006 / Get Yours</span>
+        <h2 class="section-heading">This changes<br>everything.</h2>
+        <p class="section-body">Starting from $999. Trade in your current iPhone and get credit toward a new one.</p>
+        <a href="#" class="cta-button">Order Now</a>
+        <p class="section-note">Free delivery. Or pick up at an Apple Store.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2024 Apple Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
