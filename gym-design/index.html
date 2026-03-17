@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ФОРМА — Фитнес-зал нового поколения</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <span class="loader__logo">ФОРМА</span>
+      <div class="loader__bar">
+        <div class="loader__progress" id="loaderProgress"></div>
+      </div>
+      <span class="loader__percent" id="loaderPercent">0%</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <a href="#" class="header__logo">ФОРМА</a>
+    <nav class="header__nav">
+      <a href="#benefits" class="header__link">Преимущества</a>
+      <a href="#trainers" class="header__link">Тренеры</a>
+      <a href="#pricing" class="header__link">Абонементы</a>
+    </nav>
+    <a href="#pricing" class="header__cta">Записаться</a>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="assets/banners/8276_IMG_8497.jpeg" alt="Фитнес-зал ФОРМА" class="hero__bg-img">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__label">
+        <span class="hero__label-line"></span>
+        <span>001 / Фитнес нового поколения</span>
+      </div>
+      <h1 class="hero__title">
+        <span class="hero__word">Твоя</span>
+        <span class="hero__word">лучшая</span>
+        <span class="hero__word hero__word--accent">форма</span>
+        <span class="hero__word">начинается</span>
+        <span class="hero__word">здесь</span>
+      </h1>
+      <p class="hero__subtitle">Премиальный фитнес-зал с панорамными окнами, топовым оборудованием и тренерами, которые знают свое дело</p>
+      <div class="hero__actions">
+        <a href="#pricing" class="btn btn--primary magnetic-btn">
+          <span>Начать тренироваться</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#benefits" class="btn btn--ghost">Узнать больше</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Скролл</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span class="marquee__text">Сила</span>
+      <span class="marquee__dot"></span>
+      <span class="marquee__text">Энергия</span>
+      <span class="marquee__dot"></span>
+      <span class="marquee__text">Выносливость</span>
+      <span class="marquee__dot"></span>
+      <span class="marquee__text">Дисциплина</span>
+      <span class="marquee__dot"></span>
+      <span class="marquee__text">Результат</span>
+      <span class="marquee__dot"></span>
+      <span class="marquee__text">Сила</span>
+      <span class="marquee__dot"></span>
+      <span class="marquee__text">Энергия</span>
+      <span class="marquee__dot"></span>
+      <span class="marquee__text">Выносливость</span>
+      <span class="marquee__dot"></span>
+      <span class="marquee__text">Дисциплина</span>
+      <span class="marquee__dot"></span>
+      <span class="marquee__text">Результат</span>
+      <span class="marquee__dot"></span>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <section class="stats" id="stats">
+    <div class="stats__grid">
+      <div class="stats__item" data-animation="fade-up">
+        <span class="stats__number" data-count="2500">0</span>
+        <span class="stats__label">Активных клиентов</span>
+      </div>
+      <div class="stats__item" data-animation="fade-up">
+        <span class="stats__number" data-count="15">0</span>
+        <span class="stats__label">Профессиональных тренеров</span>
+      </div>
+      <div class="stats__item" data-animation="fade-up">
+        <span class="stats__number" data-count="3000">0</span>
+        <span class="stats__label">Площадь зала, м²</span>
+      </div>
+      <div class="stats__item" data-animation="fade-up">
+        <span class="stats__number" data-count="8">0</span>
+        <span class="stats__label">Лет на рынке</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="benefits" id="benefits">
+    <div class="benefits__header">
+      <span class="section-label" data-animation="fade-up">002 / Почему мы</span>
+      <h2 class="section-title" data-animation="fade-up">Преимущества<br><span class="text-accent">ФОРМЫ</span></h2>
+    </div>
+
+    <div class="benefits__grid">
+      <div class="benefits__card" data-animation="fade-up">
+        <div class="benefits__card-img">
+          <img src="assets/benefits/af-benefits-affordable-coaches.webp" alt="Профессиональные тренеры">
+        </div>
+        <div class="benefits__card-content">
+          <span class="benefits__card-num">01</span>
+          <h3 class="benefits__card-title">Персональный подход</h3>
+          <p class="benefits__card-text">Каждый тренер составляет индивидуальную программу, учитывая ваши цели, уровень подготовки и особенности здоровья</p>
+        </div>
+      </div>
+
+      <div class="benefits__card" data-animation="fade-up">
+        <div class="benefits__card-img">
+          <img src="assets/benefits/af-benefits-anytime-anywhere.webp" alt="Свобода расписания">
+        </div>
+        <div class="benefits__card-content">
+          <span class="benefits__card-num">02</span>
+          <h3 class="benefits__card-title">Свобода расписания</h3>
+          <p class="benefits__card-text">Зал открыт с 6:00 до 24:00 без выходных. Тренируйтесь когда удобно — утром до работы или поздно вечером</p>
+        </div>
+      </div>
+
+      <div class="benefits__card" data-animation="fade-up">
+        <div class="benefits__card-img">
+          <img src="assets/benefits/af-benefits-personalized-plans.webp" alt="Групповые занятия">
+        </div>
+        <div class="benefits__card-content">
+          <span class="benefits__card-num">03</span>
+          <h3 class="benefits__card-title">Программы для всех</h3>
+          <p class="benefits__card-text">От силовых тренировок до йоги и кардио. Более 30 направлений групповых занятий каждую неделю</p>
+        </div>
+      </div>
+
+      <div class="benefits__card" data-animation="fade-up">
+        <div class="benefits__card-img">
+          <img src="assets/benefits/sauna-relax-2023-11-27-05-00-45-utc-scaled-1.jpg" alt="Зона восстановления">
+        </div>
+        <div class="benefits__card-content">
+          <span class="benefits__card-num">04</span>
+          <h3 class="benefits__card-title">Зона восстановления</h3>
+          <p class="benefits__card-text">Финская сауна, хаммам и массажный кабинет. Полноценное восстановление после каждой тренировки</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery strip -->
+  <section class="gallery">
+    <div class="gallery__track">
+      <div class="gallery__item"><img src="assets/banners/45d0_IMG_8500.jpeg" alt="Зал"></div>
+      <div class="gallery__item"><img src="assets/banners/eed3_IMG_8492.jpeg" alt="Оборудование"></div>
+      <div class="gallery__item"><img src="assets/banners/ae30_IMG_3154.jpeg" alt="Тренажеры"></div>
+      <div class="gallery__item"><img src="assets/banners/c853_F2374312-A20F-48CE-BE53-EEE633B954EA.jpeg" alt="Кардио зона"></div>
+      <div class="gallery__item"><img src="assets/banners/llp-carousel-combo-brand-1.jpg" alt="Тренировка"></div>
+      <div class="gallery__item"><img src="assets/banners/llp-carousel-combo-brand-3.jpg" alt="Атмосфера"></div>
+    </div>
+  </section>
+
+  <!-- Trainers -->
+  <section class="trainers" id="trainers">
+    <div class="trainers__header">
+      <span class="section-label" data-animation="fade-up">003 / Команда</span>
+      <h2 class="section-title" data-animation="fade-up">Наши<br><span class="text-accent">тренеры</span></h2>
+      <p class="section-desc" data-animation="fade-up">Сертифицированные специалисты с опытом работы от 5 лет. Каждый из них — мастер своего направления</p>
+    </div>
+
+    <div class="trainers__grid">
+      <div class="trainers__card" data-animation="slide-left">
+        <div class="trainers__card-img">
+          <img src="assets/trainers/man1.jpg" alt="Артём Волков">
+          <div class="trainers__card-overlay">
+            <span class="trainers__card-spec">Силовой тренинг / Функционал</span>
+          </div>
+        </div>
+        <div class="trainers__card-info">
+          <h3 class="trainers__card-name">Артём Волков</h3>
+          <span class="trainers__card-role">Мастер-тренер</span>
+        </div>
+      </div>
+
+      <div class="trainers__card" data-animation="slide-right">
+        <div class="trainers__card-img">
+          <img src="assets/trainers/woman1.jpg" alt="Алина Соколова">
+          <div class="trainers__card-overlay">
+            <span class="trainers__card-spec">Йога / Пилатес / Растяжка</span>
+          </div>
+        </div>
+        <div class="trainers__card-info">
+          <h3 class="trainers__card-name">Алина Соколова</h3>
+          <span class="trainers__card-role">Тренер групповых программ</span>
+        </div>
+      </div>
+
+      <div class="trainers__card" data-animation="slide-left">
+        <div class="trainers__card-img">
+          <img src="assets/trainers/man2.jpg" alt="Дмитрий Ким">
+          <div class="trainers__card-overlay">
+            <span class="trainers__card-spec">Кроссфит / HIIT / Выносливость</span>
+          </div>
+        </div>
+        <div class="trainers__card-info">
+          <h3 class="trainers__card-name">Дмитрий Ким</h3>
+          <span class="trainers__card-role">Старший тренер</span>
+        </div>
+      </div>
+
+      <div class="trainers__card" data-animation="slide-right">
+        <div class="trainers__card-img">
+          <img src="assets/trainers/woman2.jpeg" alt="Марина Козлова">
+          <div class="trainers__card-overlay">
+            <span class="trainers__card-spec">Фитнес-бикини / Похудение</span>
+          </div>
+        </div>
+        <div class="trainers__card-info">
+          <h3 class="trainers__card-name">Марина Козлова</h3>
+          <span class="trainers__card-role">Персональный тренер</span>
+        </div>
+      </div>
+
+      <div class="trainers__card" data-animation="slide-left">
+        <div class="trainers__card-img">
+          <img src="assets/trainers/man3.jpeg" alt="Сергей Михайлов">
+          <div class="trainers__card-overlay">
+            <span class="trainers__card-spec">Бокс / Единоборства / ОФП</span>
+          </div>
+        </div>
+        <div class="trainers__card-info">
+          <h3 class="trainers__card-name">Сергей Михайлов</h3>
+          <span class="trainers__card-role">Тренер по единоборствам</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="pricing__header">
+      <span class="section-label" data-animation="fade-up">004 / Абонементы</span>
+      <h2 class="section-title" data-animation="fade-up">Выбери свой<br><span class="text-accent">формат</span></h2>
+    </div>
+
+    <div class="pricing__grid">
+      <div class="pricing__card" data-animation="scale-up">
+        <div class="pricing__card-head">
+          <span class="pricing__card-tag">Старт</span>
+          <h3 class="pricing__card-name">Базовый</h3>
+          <div class="pricing__card-price">
+            <span class="pricing__card-amount">2 900</span>
+            <span class="pricing__card-period">руб / мес</span>
+          </div>
+        </div>
+        <ul class="pricing__card-features">
+          <li class="pricing__card-feature">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Свободный доступ в зал
+          </li>
+          <li class="pricing__card-feature">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Раздевалки и душевые
+          </li>
+          <li class="pricing__card-feature">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Кардио-зона
+          </li>
+          <li class="pricing__card-feature pricing__card-feature--disabled">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            Групповые занятия
+          </li>
+          <li class="pricing__card-feature pricing__card-feature--disabled">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            Сауна и хаммам
+          </li>
+          <li class="pricing__card-feature pricing__card-feature--disabled">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            Персональные тренировки
+          </li>
+        </ul>
+        <a href="#" class="pricing__card-btn btn btn--ghost">Выбрать</a>
+      </div>
+
+      <div class="pricing__card pricing__card--featured" data-animation="scale-up">
+        <div class="pricing__card-badge">Популярный</div>
+        <div class="pricing__card-head">
+          <span class="pricing__card-tag">Оптимальный</span>
+          <h3 class="pricing__card-name">Стандарт</h3>
+          <div class="pricing__card-price">
+            <span class="pricing__card-amount">4 500</span>
+            <span class="pricing__card-period">руб / мес</span>
+          </div>
+        </div>
+        <ul class="pricing__card-features">
+          <li class="pricing__card-feature">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Свободный доступ в зал
+          </li>
+          <li class="pricing__card-feature">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Раздевалки и душевые
+          </li>
+          <li class="pricing__card-feature">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Кардио-зона
+          </li>
+          <li class="pricing__card-feature">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Все групповые занятия
+          </li>
+          <li class="pricing__card-feature">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Сауна и хаммам
+          </li>
+          <li class="pricing__card-feature pricing__card-feature--disabled">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            Персональные тренировки
+          </li>
+        </ul>
+        <a href="#" class="pricing__card-btn btn btn--primary magnetic-btn">
+          <span>Выбрать</span>
+        </a>
+      </div>
+
+      <div class="pricing__card" data-animation="scale-up">
+        <div class="pricing__card-head">
+          <span class="pricing__card-tag">Максимум</span>
+          <h3 class="pricing__card-name">Премиум</h3>
+          <div class="pricing__card-price">
+            <span class="pricing__card-amount">7 900</span>
+            <span class="pricing__card-period">руб / мес</span>
+          </div>
+        </div>
+        <ul class="pricing__card-features">
+          <li class="pricing__card-feature">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Свободный доступ 24/7
+          </li>
+          <li class="pricing__card-feature">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            VIP-раздевалки
+          </li>
+          <li class="pricing__card-feature">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Кардио и силовая зона
+          </li>
+          <li class="pricing__card-feature">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Все групповые занятия
+          </li>
+          <li class="pricing__card-feature">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Сауна, хаммам, массаж
+          </li>
+          <li class="pricing__card-feature">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            4 персональные тренировки
+          </li>
+        </ul>
+        <a href="#" class="pricing__card-btn btn btn--ghost">Выбрать</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta__bg">
+      <img src="assets/banners/eed3_IMG_8492.jpeg" alt="" class="cta__bg-img">
+      <div class="cta__overlay"></div>
+    </div>
+    <div class="cta__content" data-animation="fade-up">
+      <h2 class="cta__title">Готов начать?</h2>
+      <p class="cta__text">Первая тренировка — бесплатно. Приходи, попробуй и убедись сам</p>
+      <a href="#" class="btn btn--primary btn--large magnetic-btn">
+        <span>Записаться на пробную тренировку</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="footer__logo">ФОРМА</span>
+        <p class="footer__tagline">Фитнес-зал нового поколения</p>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4 class="footer__col-title">Контакты</h4>
+          <a href="tel:+74951234567" class="footer__link">+7 (495) 123-45-67</a>
+          <a href="mailto:info@forma-gym.ru" class="footer__link">info@forma-gym.ru</a>
+          <span class="footer__link">г. Москва, ул. Спортивная, 12</span>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Режим работы</h4>
+          <span class="footer__link">Пн — Пт: 6:00 — 24:00</span>
+          <span class="footer__link">Сб — Вс: 8:00 — 22:00</span>
+          <span class="footer__link">Премиум: круглосуточно</span>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Соцсети</h4>
+          <a href="#" class="footer__link">Telegram</a>
+          <a href="#" class="footer__link">VK</a>
+          <a href="#" class="footer__link">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 ФОРМА. Все права защищены.</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
