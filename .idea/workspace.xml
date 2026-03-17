@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="479c5765-4e58-43a2-b0f2-f7999d2e6f17" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone-design/video.mp4" afterDir="false" />
+    <list default="true" id="479c5765-4e58-43a2-b0f2-f7999d2e6f17" name="Changes" comment="add iphone design">
+      <change beforePath="$PROJECT_DIR$/iphone-design/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/iphone-design/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iphone-design/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/iphone-design/js/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,8 +92,17 @@
       <option name="presentableId" value="Default" />
       <updated>1773675250996</updated>
       <workItem from="1773675252165" duration="5487000" />
-      <workItem from="1773727422811" duration="3806000" />
+      <workItem from="1773727422811" duration="4529000" />
     </task>
+    <task id="LOCAL-00001" summary="add iphone design">
+      <option name="closed" value="true" />
+      <created>1773732499808</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1773732499808</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,5 +118,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add iphone design" />
+    <option name="LAST_COMMIT_MESSAGE" value="add iphone design" />
   </component>
 </project>

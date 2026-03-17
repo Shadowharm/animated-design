@@ -303,25 +303,25 @@ function setupSectionAnimation(section) {
 function animateIn(children, type) {
   switch (type) {
     case "fade-up":
-      gsap.to(children, { y: 0, opacity: 1, stagger: 0.12, duration: 0.9, ease: "power3.out" });
+      gsap.to(children, { y: 0, opacity: 1, stagger: 0.08, duration: 0.55, ease: "power3.out" });
       break;
     case "slide-left":
-      gsap.to(children, { x: 0, opacity: 1, stagger: 0.14, duration: 0.9, ease: "power3.out" });
+      gsap.to(children, { x: 0, opacity: 1, stagger: 0.09, duration: 0.55, ease: "power3.out" });
       break;
     case "slide-right":
-      gsap.to(children, { x: 0, opacity: 1, stagger: 0.14, duration: 0.9, ease: "power3.out" });
+      gsap.to(children, { x: 0, opacity: 1, stagger: 0.09, duration: 0.55, ease: "power3.out" });
       break;
     case "scale-up":
-      gsap.to(children, { scale: 1, opacity: 1, stagger: 0.12, duration: 1.0, ease: "power2.out" });
+      gsap.to(children, { scale: 1, opacity: 1, stagger: 0.08, duration: 0.6, ease: "power2.out" });
       break;
     case "rotate-in":
-      gsap.to(children, { y: 0, rotation: 0, opacity: 1, stagger: 0.1, duration: 0.9, ease: "power3.out" });
+      gsap.to(children, { y: 0, rotation: 0, opacity: 1, stagger: 0.07, duration: 0.55, ease: "power3.out" });
       break;
     case "stagger-up":
-      gsap.to(children, { y: 0, opacity: 1, stagger: 0.15, duration: 0.8, ease: "power3.out" });
+      gsap.to(children, { y: 0, opacity: 1, stagger: 0.1, duration: 0.5, ease: "power3.out" });
       break;
     case "clip-reveal":
-      gsap.to(children, { clipPath: "inset(0% 0 0 0)", opacity: 1, stagger: 0.15, duration: 1.2, ease: "power4.inOut" });
+      gsap.to(children, { clipPath: "inset(0% 0 0 0)", opacity: 1, stagger: 0.1, duration: 0.65, ease: "power4.inOut" });
       break;
   }
 }
