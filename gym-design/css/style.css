@@ -221,6 +221,12 @@ ul {
   z-index: 0;
 }
 
+.hero__bg picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .hero__bg-img {
   width: 100%;
   height: 100%;
@@ -560,6 +566,12 @@ ul {
   overflow: hidden;
 }
 
+.benefits__card-img picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .benefits__card-img img {
   width: 100%;
   height: 100%;
@@ -623,6 +635,12 @@ ul {
   flex-shrink: 0;
 }
 
+.gallery__item picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .gallery__item img {
   width: 100%;
   height: 100%;
@@ -668,6 +686,12 @@ ul {
   position: relative;
   aspect-ratio: 3/4;
   overflow: hidden;
+}
+
+.trainers__card-img picture {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .trainers__card-img img {
@@ -886,6 +910,12 @@ ul {
 .cta__bg {
   position: absolute;
   inset: 0;
+}
+
+.cta__bg picture {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .cta__bg-img {

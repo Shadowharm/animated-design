@@ -36,7 +36,46 @@
   <!-- Hero -->
   <section class="hero" id="hero">
     <div class="hero__bg">
-      <img src="assets/banners/8276_IMG_8497.jpeg" alt="Фитнес-зал ФОРМА" class="hero__bg-img">
+      <picture>
+        <source
+          media="(max-width: 768px)"
+          type="image/avif"
+          srcset="
+            assets/optimized/banners/hero-main-m-1x.avif 1x,
+            assets/optimized/banners/hero-main-m-2x.avif 2x,
+            assets/optimized/banners/hero-main-m-3x.avif 3x
+          ">
+        <source
+          media="(max-width: 768px)"
+          type="image/webp"
+          srcset="
+            assets/optimized/banners/hero-main-m-1x.webp 1x,
+            assets/optimized/banners/hero-main-m-2x.webp 2x,
+            assets/optimized/banners/hero-main-m-3x.webp 3x
+          ">
+        <source
+          media="(min-width: 769px)"
+          type="image/avif"
+          srcset="
+            assets/optimized/banners/hero-main-d-1x.avif 1x,
+            assets/optimized/banners/hero-main-d-2x.avif 2x,
+            assets/optimized/banners/hero-main-d-3x.avif 3x
+          ">
+        <source
+          media="(min-width: 769px)"
+          type="image/webp"
+          srcset="
+            assets/optimized/banners/hero-main-d-1x.webp 1x,
+            assets/optimized/banners/hero-main-d-2x.webp 2x,
+            assets/optimized/banners/hero-main-d-3x.webp 3x
+          ">
+        <img
+          src="assets/optimized/banners/hero-main-d-1x.webp"
+          alt="Фитнес-зал ФОРМА"
+          class="hero__bg-img"
+          fetchpriority="high"
+          decoding="async">
+      </picture>
       <div class="hero__overlay"></div>
     </div>
     <div class="hero__content">
@@ -124,7 +163,13 @@
     <div class="benefits__grid">
       <div class="benefits__card" data-animation="fade-up">
         <div class="benefits__card-img">
-          <img src="assets/benefits/af-benefits-affordable-coaches.webp" alt="Профессиональные тренеры">
+          <picture>
+            <source media="(max-width: 768px)" type="image/avif" srcset="assets/optimized/benefits/affordable-coaches-m-1x.avif 1x, assets/optimized/benefits/affordable-coaches-m-2x.avif 2x, assets/optimized/benefits/affordable-coaches-m-3x.avif 3x">
+            <source media="(max-width: 768px)" type="image/webp" srcset="assets/optimized/benefits/affordable-coaches-m-1x.webp 1x, assets/optimized/benefits/affordable-coaches-m-2x.webp 2x, assets/optimized/benefits/affordable-coaches-m-3x.webp 3x">
+            <source media="(min-width: 769px)" type="image/avif" srcset="assets/optimized/benefits/affordable-coaches-d-1x.avif 1x, assets/optimized/benefits/affordable-coaches-d-2x.avif 2x, assets/optimized/benefits/affordable-coaches-d-3x.avif 3x">
+            <source media="(min-width: 769px)" type="image/webp" srcset="assets/optimized/benefits/affordable-coaches-d-1x.webp 1x, assets/optimized/benefits/affordable-coaches-d-2x.webp 2x, assets/optimized/benefits/affordable-coaches-d-3x.webp 3x">
+            <img src="assets/optimized/benefits/affordable-coaches-d-1x.webp" alt="Профессиональные тренеры" loading="lazy" decoding="async">
+          </picture>
         </div>
         <div class="benefits__card-content">
           <span class="benefits__card-num">01</span>
@@ -135,7 +180,13 @@
 
       <div class="benefits__card" data-animation="fade-up">
         <div class="benefits__card-img">
-          <img src="assets/benefits/af-benefits-anytime-anywhere.webp" alt="Свобода расписания">
+          <picture>
+            <source media="(max-width: 768px)" type="image/avif" srcset="assets/optimized/benefits/anytime-anywhere-m-1x.avif 1x, assets/optimized/benefits/anytime-anywhere-m-2x.avif 2x, assets/optimized/benefits/anytime-anywhere-m-3x.avif 3x">
+            <source media="(max-width: 768px)" type="image/webp" srcset="assets/optimized/benefits/anytime-anywhere-m-1x.webp 1x, assets/optimized/benefits/anytime-anywhere-m-2x.webp 2x, assets/optimized/benefits/anytime-anywhere-m-3x.webp 3x">
+            <source media="(min-width: 769px)" type="image/avif" srcset="assets/optimized/benefits/anytime-anywhere-d-1x.avif 1x, assets/optimized/benefits/anytime-anywhere-d-2x.avif 2x, assets/optimized/benefits/anytime-anywhere-d-3x.avif 3x">
+            <source media="(min-width: 769px)" type="image/webp" srcset="assets/optimized/benefits/anytime-anywhere-d-1x.webp 1x, assets/optimized/benefits/anytime-anywhere-d-2x.webp 2x, assets/optimized/benefits/anytime-anywhere-d-3x.webp 3x">
+            <img src="assets/optimized/benefits/anytime-anywhere-d-1x.webp" alt="Свобода расписания" loading="lazy" decoding="async">
+          </picture>
         </div>
         <div class="benefits__card-content">
           <span class="benefits__card-num">02</span>
@@ -146,7 +197,13 @@
 
       <div class="benefits__card" data-animation="fade-up">
         <div class="benefits__card-img">
-          <img src="assets/benefits/af-benefits-personalized-plans.webp" alt="Групповые занятия">
+          <picture>
+            <source media="(max-width: 768px)" type="image/avif" srcset="assets/optimized/benefits/personalized-plans-m-1x.avif 1x, assets/optimized/benefits/personalized-plans-m-2x.avif 2x, assets/optimized/benefits/personalized-plans-m-3x.avif 3x">
+            <source media="(max-width: 768px)" type="image/webp" srcset="assets/optimized/benefits/personalized-plans-m-1x.webp 1x, assets/optimized/benefits/personalized-plans-m-2x.webp 2x, assets/optimized/benefits/personalized-plans-m-3x.webp 3x">
+            <source media="(min-width: 769px)" type="image/avif" srcset="assets/optimized/benefits/personalized-plans-d-1x.avif 1x, assets/optimized/benefits/personalized-plans-d-2x.avif 2x, assets/optimized/benefits/personalized-plans-d-3x.avif 3x">
+            <source media="(min-width: 769px)" type="image/webp" srcset="assets/optimized/benefits/personalized-plans-d-1x.webp 1x, assets/optimized/benefits/personalized-plans-d-2x.webp 2x, assets/optimized/benefits/personalized-plans-d-3x.webp 3x">
+            <img src="assets/optimized/benefits/personalized-plans-d-1x.webp" alt="Групповые занятия" loading="lazy" decoding="async">
+          </picture>
         </div>
         <div class="benefits__card-content">
           <span class="benefits__card-num">03</span>
@@ -157,7 +214,13 @@
 
       <div class="benefits__card" data-animation="fade-up">
         <div class="benefits__card-img">
-          <img src="assets/benefits/sauna-relax-2023-11-27-05-00-45-utc-scaled-1.jpg" alt="Зона восстановления">
+          <picture>
+            <source media="(max-width: 768px)" type="image/avif" srcset="assets/optimized/benefits/recovery-zone-m-1x.avif 1x, assets/optimized/benefits/recovery-zone-m-2x.avif 2x, assets/optimized/benefits/recovery-zone-m-3x.avif 3x">
+            <source media="(max-width: 768px)" type="image/webp" srcset="assets/optimized/benefits/recovery-zone-m-1x.webp 1x, assets/optimized/benefits/recovery-zone-m-2x.webp 2x, assets/optimized/benefits/recovery-zone-m-3x.webp 3x">
+            <source media="(min-width: 769px)" type="image/avif" srcset="assets/optimized/benefits/recovery-zone-d-1x.avif 1x, assets/optimized/benefits/recovery-zone-d-2x.avif 2x, assets/optimized/benefits/recovery-zone-d-3x.avif 3x">
+            <source media="(min-width: 769px)" type="image/webp" srcset="assets/optimized/benefits/recovery-zone-d-1x.webp 1x, assets/optimized/benefits/recovery-zone-d-2x.webp 2x, assets/optimized/benefits/recovery-zone-d-3x.webp 3x">
+            <img src="assets/optimized/benefits/recovery-zone-d-1x.webp" alt="Зона восстановления" loading="lazy" decoding="async">
+          </picture>
         </div>
         <div class="benefits__card-content">
           <span class="benefits__card-num">04</span>
@@ -171,12 +234,60 @@
   <!-- Gallery strip -->
   <section class="gallery">
     <div class="gallery__track">
-      <div class="gallery__item"><img src="assets/banners/45d0_IMG_8500.jpeg" alt="Зал"></div>
-      <div class="gallery__item"><img src="assets/banners/eed3_IMG_8492.jpeg" alt="Оборудование"></div>
-      <div class="gallery__item"><img src="assets/banners/ae30_IMG_3154.jpeg" alt="Тренажеры"></div>
-      <div class="gallery__item"><img src="assets/banners/c853_F2374312-A20F-48CE-BE53-EEE633B954EA.jpeg" alt="Кардио зона"></div>
-      <div class="gallery__item"><img src="assets/banners/llp-carousel-combo-brand-1.jpg" alt="Тренировка"></div>
-      <div class="gallery__item"><img src="assets/banners/llp-carousel-combo-brand-3.jpg" alt="Атмосфера"></div>
+      <div class="gallery__item">
+        <picture>
+          <source media="(max-width: 768px)" type="image/avif" srcset="assets/optimized/banners/gallery-hall-m-1x.avif 1x, assets/optimized/banners/gallery-hall-m-2x.avif 2x, assets/optimized/banners/gallery-hall-m-3x.avif 3x">
+          <source media="(max-width: 768px)" type="image/webp" srcset="assets/optimized/banners/gallery-hall-m-1x.webp 1x, assets/optimized/banners/gallery-hall-m-2x.webp 2x, assets/optimized/banners/gallery-hall-m-3x.webp 3x">
+          <source media="(min-width: 769px)" type="image/avif" srcset="assets/optimized/banners/gallery-hall-d-1x.avif 1x, assets/optimized/banners/gallery-hall-d-2x.avif 2x, assets/optimized/banners/gallery-hall-d-3x.avif 3x">
+          <source media="(min-width: 769px)" type="image/webp" srcset="assets/optimized/banners/gallery-hall-d-1x.webp 1x, assets/optimized/banners/gallery-hall-d-2x.webp 2x, assets/optimized/banners/gallery-hall-d-3x.webp 3x">
+          <img src="assets/optimized/banners/gallery-hall-d-1x.webp" alt="Зал" loading="lazy" decoding="async">
+        </picture>
+      </div>
+      <div class="gallery__item">
+        <picture>
+          <source media="(max-width: 768px)" type="image/avif" srcset="assets/optimized/banners/gallery-equipment-m-1x.avif 1x, assets/optimized/banners/gallery-equipment-m-2x.avif 2x, assets/optimized/banners/gallery-equipment-m-3x.avif 3x">
+          <source media="(max-width: 768px)" type="image/webp" srcset="assets/optimized/banners/gallery-equipment-m-1x.webp 1x, assets/optimized/banners/gallery-equipment-m-2x.webp 2x, assets/optimized/banners/gallery-equipment-m-3x.webp 3x">
+          <source media="(min-width: 769px)" type="image/avif" srcset="assets/optimized/banners/gallery-equipment-d-1x.avif 1x, assets/optimized/banners/gallery-equipment-d-2x.avif 2x, assets/optimized/banners/gallery-equipment-d-3x.avif 3x">
+          <source media="(min-width: 769px)" type="image/webp" srcset="assets/optimized/banners/gallery-equipment-d-1x.webp 1x, assets/optimized/banners/gallery-equipment-d-2x.webp 2x, assets/optimized/banners/gallery-equipment-d-3x.webp 3x">
+          <img src="assets/optimized/banners/gallery-equipment-d-1x.webp" alt="Оборудование" loading="lazy" decoding="async">
+        </picture>
+      </div>
+      <div class="gallery__item">
+        <picture>
+          <source media="(max-width: 768px)" type="image/avif" srcset="assets/optimized/banners/gallery-machines-m-1x.avif 1x, assets/optimized/banners/gallery-machines-m-2x.avif 2x, assets/optimized/banners/gallery-machines-m-3x.avif 3x">
+          <source media="(max-width: 768px)" type="image/webp" srcset="assets/optimized/banners/gallery-machines-m-1x.webp 1x, assets/optimized/banners/gallery-machines-m-2x.webp 2x, assets/optimized/banners/gallery-machines-m-3x.webp 3x">
+          <source media="(min-width: 769px)" type="image/avif" srcset="assets/optimized/banners/gallery-machines-d-1x.avif 1x, assets/optimized/banners/gallery-machines-d-2x.avif 2x, assets/optimized/banners/gallery-machines-d-3x.avif 3x">
+          <source media="(min-width: 769px)" type="image/webp" srcset="assets/optimized/banners/gallery-machines-d-1x.webp 1x, assets/optimized/banners/gallery-machines-d-2x.webp 2x, assets/optimized/banners/gallery-machines-d-3x.webp 3x">
+          <img src="assets/optimized/banners/gallery-machines-d-1x.webp" alt="Тренажеры" loading="lazy" decoding="async">
+        </picture>
+      </div>
+      <div class="gallery__item">
+        <picture>
+          <source media="(max-width: 768px)" type="image/avif" srcset="assets/optimized/banners/gallery-cardio-m-1x.avif 1x, assets/optimized/banners/gallery-cardio-m-2x.avif 2x, assets/optimized/banners/gallery-cardio-m-3x.avif 3x">
+          <source media="(max-width: 768px)" type="image/webp" srcset="assets/optimized/banners/gallery-cardio-m-1x.webp 1x, assets/optimized/banners/gallery-cardio-m-2x.webp 2x, assets/optimized/banners/gallery-cardio-m-3x.webp 3x">
+          <source media="(min-width: 769px)" type="image/avif" srcset="assets/optimized/banners/gallery-cardio-d-1x.avif 1x, assets/optimized/banners/gallery-cardio-d-2x.avif 2x, assets/optimized/banners/gallery-cardio-d-3x.avif 3x">
+          <source media="(min-width: 769px)" type="image/webp" srcset="assets/optimized/banners/gallery-cardio-d-1x.webp 1x, assets/optimized/banners/gallery-cardio-d-2x.webp 2x, assets/optimized/banners/gallery-cardio-d-3x.webp 3x">
+          <img src="assets/optimized/banners/gallery-cardio-d-1x.webp" alt="Кардио зона" loading="lazy" decoding="async">
+        </picture>
+      </div>
+      <div class="gallery__item">
+        <picture>
+          <source media="(max-width: 768px)" type="image/avif" srcset="assets/optimized/banners/gallery-training-m-1x.avif 1x, assets/optimized/banners/gallery-training-m-2x.avif 2x, assets/optimized/banners/gallery-training-m-3x.avif 3x">
+          <source media="(max-width: 768px)" type="image/webp" srcset="assets/optimized/banners/gallery-training-m-1x.webp 1x, assets/optimized/banners/gallery-training-m-2x.webp 2x, assets/optimized/banners/gallery-training-m-3x.webp 3x">
+          <source media="(min-width: 769px)" type="image/avif" srcset="assets/optimized/banners/gallery-training-d-1x.avif 1x, assets/optimized/banners/gallery-training-d-2x.avif 2x, assets/optimized/banners/gallery-training-d-3x.avif 3x">
+          <source media="(min-width: 769px)" type="image/webp" srcset="assets/optimized/banners/gallery-training-d-1x.webp 1x, assets/optimized/banners/gallery-training-d-2x.webp 2x, assets/optimized/banners/gallery-training-d-3x.webp 3x">
+          <img src="assets/optimized/banners/gallery-training-d-1x.webp" alt="Тренировка" loading="lazy" decoding="async">
+        </picture>
+      </div>
+      <div class="gallery__item">
+        <picture>
+          <source media="(max-width: 768px)" type="image/avif" srcset="assets/optimized/banners/gallery-atmosphere-m-1x.avif 1x, assets/optimized/banners/gallery-atmosphere-m-2x.avif 2x, assets/optimized/banners/gallery-atmosphere-m-3x.avif 3x">
+          <source media="(max-width: 768px)" type="image/webp" srcset="assets/optimized/banners/gallery-atmosphere-m-1x.webp 1x, assets/optimized/banners/gallery-atmosphere-m-2x.webp 2x, assets/optimized/banners/gallery-atmosphere-m-3x.webp 3x">
+          <source media="(min-width: 769px)" type="image/avif" srcset="assets/optimized/banners/gallery-atmosphere-d-1x.avif 1x, assets/optimized/banners/gallery-atmosphere-d-2x.avif 2x, assets/optimized/banners/gallery-atmosphere-d-3x.avif 3x">
+          <source media="(min-width: 769px)" type="image/webp" srcset="assets/optimized/banners/gallery-atmosphere-d-1x.webp 1x, assets/optimized/banners/gallery-atmosphere-d-2x.webp 2x, assets/optimized/banners/gallery-atmosphere-d-3x.webp 3x">
+          <img src="assets/optimized/banners/gallery-atmosphere-d-1x.webp" alt="Атмосфера" loading="lazy" decoding="async">
+        </picture>
+      </div>
     </div>
   </section>
 
@@ -191,7 +302,13 @@
     <div class="trainers__grid">
       <div class="trainers__card" data-animation="slide-left">
         <div class="trainers__card-img">
-          <img src="assets/trainers/man1.jpg" alt="Артём Волков">
+          <picture>
+            <source media="(max-width: 768px)" type="image/avif" srcset="assets/optimized/trainers/artem-volkov-m-1x.avif 1x, assets/optimized/trainers/artem-volkov-m-2x.avif 2x, assets/optimized/trainers/artem-volkov-m-3x.avif 3x">
+            <source media="(max-width: 768px)" type="image/webp" srcset="assets/optimized/trainers/artem-volkov-m-1x.webp 1x, assets/optimized/trainers/artem-volkov-m-2x.webp 2x, assets/optimized/trainers/artem-volkov-m-3x.webp 3x">
+            <source media="(min-width: 769px)" type="image/avif" srcset="assets/optimized/trainers/artem-volkov-d-1x.avif 1x, assets/optimized/trainers/artem-volkov-d-2x.avif 2x, assets/optimized/trainers/artem-volkov-d-3x.avif 3x">
+            <source media="(min-width: 769px)" type="image/webp" srcset="assets/optimized/trainers/artem-volkov-d-1x.webp 1x, assets/optimized/trainers/artem-volkov-d-2x.webp 2x, assets/optimized/trainers/artem-volkov-d-3x.webp 3x">
+            <img src="assets/optimized/trainers/artem-volkov-d-1x.webp" alt="Артём Волков" loading="lazy" decoding="async">
+          </picture>
           <div class="trainers__card-overlay">
             <span class="trainers__card-spec">Силовой тренинг / Функционал</span>
           </div>
@@ -204,7 +321,13 @@
 
       <div class="trainers__card" data-animation="slide-right">
         <div class="trainers__card-img">
-          <img src="assets/trainers/woman1.jpg" alt="Алина Соколова">
+          <picture>
+            <source media="(max-width: 768px)" type="image/avif" srcset="assets/optimized/trainers/alina-sokolova-m-1x.avif 1x, assets/optimized/trainers/alina-sokolova-m-2x.avif 2x, assets/optimized/trainers/alina-sokolova-m-3x.avif 3x">
+            <source media="(max-width: 768px)" type="image/webp" srcset="assets/optimized/trainers/alina-sokolova-m-1x.webp 1x, assets/optimized/trainers/alina-sokolova-m-2x.webp 2x, assets/optimized/trainers/alina-sokolova-m-3x.webp 3x">
+            <source media="(min-width: 769px)" type="image/avif" srcset="assets/optimized/trainers/alina-sokolova-d-1x.avif 1x, assets/optimized/trainers/alina-sokolova-d-2x.avif 2x, assets/optimized/trainers/alina-sokolova-d-3x.avif 3x">
+            <source media="(min-width: 769px)" type="image/webp" srcset="assets/optimized/trainers/alina-sokolova-d-1x.webp 1x, assets/optimized/trainers/alina-sokolova-d-2x.webp 2x, assets/optimized/trainers/alina-sokolova-d-3x.webp 3x">
+            <img src="assets/optimized/trainers/alina-sokolova-d-1x.webp" alt="Алина Соколова" loading="lazy" decoding="async">
+          </picture>
           <div class="trainers__card-overlay">
             <span class="trainers__card-spec">Йога / Пилатес / Растяжка</span>
           </div>
@@ -217,7 +340,13 @@
 
       <div class="trainers__card" data-animation="slide-left">
         <div class="trainers__card-img">
-          <img src="assets/trainers/man2.jpg" alt="Дмитрий Ким">
+          <picture>
+            <source media="(max-width: 768px)" type="image/avif" srcset="assets/optimized/trainers/dmitry-kim-m-1x.avif 1x, assets/optimized/trainers/dmitry-kim-m-2x.avif 2x, assets/optimized/trainers/dmitry-kim-m-3x.avif 3x">
+            <source media="(max-width: 768px)" type="image/webp" srcset="assets/optimized/trainers/dmitry-kim-m-1x.webp 1x, assets/optimized/trainers/dmitry-kim-m-2x.webp 2x, assets/optimized/trainers/dmitry-kim-m-3x.webp 3x">
+            <source media="(min-width: 769px)" type="image/avif" srcset="assets/optimized/trainers/dmitry-kim-d-1x.avif 1x, assets/optimized/trainers/dmitry-kim-d-2x.avif 2x, assets/optimized/trainers/dmitry-kim-d-3x.avif 3x">
+            <source media="(min-width: 769px)" type="image/webp" srcset="assets/optimized/trainers/dmitry-kim-d-1x.webp 1x, assets/optimized/trainers/dmitry-kim-d-2x.webp 2x, assets/optimized/trainers/dmitry-kim-d-3x.webp 3x">
+            <img src="assets/optimized/trainers/dmitry-kim-d-1x.webp" alt="Дмитрий Ким" loading="lazy" decoding="async">
+          </picture>
           <div class="trainers__card-overlay">
             <span class="trainers__card-spec">Кроссфит / HIIT / Выносливость</span>
           </div>
@@ -230,7 +359,13 @@
 
       <div class="trainers__card" data-animation="slide-right">
         <div class="trainers__card-img">
-          <img src="assets/trainers/woman2.jpeg" alt="Марина Козлова">
+          <picture>
+            <source media="(max-width: 768px)" type="image/avif" srcset="assets/optimized/trainers/marina-kozlova-m-1x.avif 1x, assets/optimized/trainers/marina-kozlova-m-2x.avif 2x, assets/optimized/trainers/marina-kozlova-m-3x.avif 3x">
+            <source media="(max-width: 768px)" type="image/webp" srcset="assets/optimized/trainers/marina-kozlova-m-1x.webp 1x, assets/optimized/trainers/marina-kozlova-m-2x.webp 2x, assets/optimized/trainers/marina-kozlova-m-3x.webp 3x">
+            <source media="(min-width: 769px)" type="image/avif" srcset="assets/optimized/trainers/marina-kozlova-d-1x.avif 1x, assets/optimized/trainers/marina-kozlova-d-2x.avif 2x, assets/optimized/trainers/marina-kozlova-d-3x.avif 3x">
+            <source media="(min-width: 769px)" type="image/webp" srcset="assets/optimized/trainers/marina-kozlova-d-1x.webp 1x, assets/optimized/trainers/marina-kozlova-d-2x.webp 2x, assets/optimized/trainers/marina-kozlova-d-3x.webp 3x">
+            <img src="assets/optimized/trainers/marina-kozlova-d-1x.webp" alt="Марина Козлова" loading="lazy" decoding="async">
+          </picture>
           <div class="trainers__card-overlay">
             <span class="trainers__card-spec">Фитнес-бикини / Похудение</span>
           </div>
@@ -243,7 +378,13 @@
 
       <div class="trainers__card" data-animation="slide-left">
         <div class="trainers__card-img">
-          <img src="assets/trainers/man3.jpeg" alt="Сергей Михайлов">
+          <picture>
+            <source media="(max-width: 768px)" type="image/avif" srcset="assets/optimized/trainers/sergey-mikhailov-m-1x.avif 1x, assets/optimized/trainers/sergey-mikhailov-m-2x.avif 2x, assets/optimized/trainers/sergey-mikhailov-m-3x.avif 3x">
+            <source media="(max-width: 768px)" type="image/webp" srcset="assets/optimized/trainers/sergey-mikhailov-m-1x.webp 1x, assets/optimized/trainers/sergey-mikhailov-m-2x.webp 2x, assets/optimized/trainers/sergey-mikhailov-m-3x.webp 3x">
+            <source media="(min-width: 769px)" type="image/avif" srcset="assets/optimized/trainers/sergey-mikhailov-d-1x.avif 1x, assets/optimized/trainers/sergey-mikhailov-d-2x.avif 2x, assets/optimized/trainers/sergey-mikhailov-d-3x.avif 3x">
+            <source media="(min-width: 769px)" type="image/webp" srcset="assets/optimized/trainers/sergey-mikhailov-d-1x.webp 1x, assets/optimized/trainers/sergey-mikhailov-d-2x.webp 2x, assets/optimized/trainers/sergey-mikhailov-d-3x.webp 3x">
+            <img src="assets/optimized/trainers/sergey-mikhailov-d-1x.webp" alt="Сергей Михайлов" loading="lazy" decoding="async">
+          </picture>
           <div class="trainers__card-overlay">
             <span class="trainers__card-spec">Бокс / Единоборства / ОФП</span>
           </div>
@@ -386,7 +527,13 @@
   <!-- CTA -->
   <section class="cta">
     <div class="cta__bg">
-      <img src="assets/banners/eed3_IMG_8492.jpeg" alt="" class="cta__bg-img">
+      <picture>
+        <source media="(max-width: 768px)" type="image/avif" srcset="assets/optimized/banners/cta-main-m-1x.avif 1x, assets/optimized/banners/cta-main-m-2x.avif 2x, assets/optimized/banners/cta-main-m-3x.avif 3x">
+        <source media="(max-width: 768px)" type="image/webp" srcset="assets/optimized/banners/cta-main-m-1x.webp 1x, assets/optimized/banners/cta-main-m-2x.webp 2x, assets/optimized/banners/cta-main-m-3x.webp 3x">
+        <source media="(min-width: 769px)" type="image/avif" srcset="assets/optimized/banners/cta-main-d-1x.avif 1x, assets/optimized/banners/cta-main-d-2x.avif 2x, assets/optimized/banners/cta-main-d-3x.avif 3x">
+        <source media="(min-width: 769px)" type="image/webp" srcset="assets/optimized/banners/cta-main-d-1x.webp 1x, assets/optimized/banners/cta-main-d-2x.webp 2x, assets/optimized/banners/cta-main-d-3x.webp 3x">
+        <img src="assets/optimized/banners/cta-main-d-1x.webp" alt="" class="cta__bg-img" loading="lazy" decoding="async">
+      </picture>
       <div class="cta__overlay"></div>
     </div>
     <div class="cta__content" data-animation="fade-up">
