@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВЕКТОР — Криптоинвестиции нового поколения</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Particle Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ═══════════ HEADER ═══════════ -->
+    <header class="header" id="header">
+        <a href="#" class="logo" data-cursor-hover>
+            <div class="logo-icon"></div>
+            ВЕКТОР
+        </a>
+
+        <nav class="nav" id="nav">
+            <a href="#chart" data-cursor-hover>Аналитика</a>
+            <a href="#advantages" data-cursor-hover>Преимущества</a>
+            <a href="#how" data-cursor-hover>Как это работает</a>
+            <a href="#security" data-cursor-hover>Безопасность</a>
+            <a href="#" class="btn-primary open-modal" style="color: white">Оставить заявку</a>
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle" data-cursor-hover aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="hero">
+        <div class="hero-aurora">
+            <div class="aurora-orb aurora-orb--1"></div>
+            <div class="aurora-orb aurora-orb--2"></div>
+            <div class="aurora-orb aurora-orb--3"></div>
+        </div>
+        <div class="hero-gradient"></div>
+
+        <div class="hero-content">
+            <div class="hero-label reveal">001 / Платформа</div>
+            <h1 class="hero-title reveal">
+                Инвестируйте<br>
+                в <span class="accent">будущее</span>
+            </h1>
+            <p class="hero-subtitle reveal">
+                Покупайте, продавайте и храните криптовалюту с нулевыми скрытыми комиссиями. Профессиональные инструменты аналитики для каждого инвестора.
+            </p>
+            <div class="hero-actions reveal">
+                <a href="#" class="btn-primary open-modal" data-cursor-hover>Оставить заявку</a>
+            </div>
+        </div>
+
+        <div class="ticker reveal" id="ticker">
+            <div class="ticker-item" data-coin="bitcoin">
+                <div class="ticker-coin">
+                    <span class="ticker-symbol">BTC</span>
+                    <span class="ticker-name">Bitcoin</span>
+                </div>
+                <div class="ticker-price" id="price-btc">—</div>
+                <div class="ticker-change" id="change-btc">—</div>
+            </div>
+            <div class="ticker-item" data-coin="ethereum">
+                <div class="ticker-coin">
+                    <span class="ticker-symbol">ETH</span>
+                    <span class="ticker-name">Ethereum</span>
+                </div>
+                <div class="ticker-price" id="price-eth">—</div>
+                <div class="ticker-change" id="change-eth">—</div>
+            </div>
+            <div class="ticker-item" data-coin="solana">
+                <div class="ticker-coin">
+                    <span class="ticker-symbol">SOL</span>
+                    <span class="ticker-name">Solana</span>
+                </div>
+                <div class="ticker-price" id="price-sol">—</div>
+                <div class="ticker-change" id="change-sol">—</div>
+            </div>
+            <div class="ticker-item" data-coin="cardano">
+                <div class="ticker-coin">
+                    <span class="ticker-symbol">ADA</span>
+                    <span class="ticker-name">Cardano</span>
+                </div>
+                <div class="ticker-price" id="price-ada">—</div>
+                <div class="ticker-change" id="change-ada">—</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ CHART SECTION ═══════════ -->
+    <section class="chart-section" id="chart">
+        <div class="section-label reveal">002 / Аналитика</div>
+        <div class="chart-header">
+            <div>
+                <h2 class="section-title reveal">Курс в реальном времени</h2>
+            </div>
+            <div class="chart-controls reveal">
+                <div class="coin-tabs" id="coinTabs">
+                    <button class="coin-tab active" data-coin="bitcoin" data-cursor-hover>BTC</button>
+                    <button class="coin-tab" data-coin="ethereum" data-cursor-hover>ETH</button>
+                    <button class="coin-tab" data-coin="solana" data-cursor-hover>SOL</button>
+                </div>
+                <div class="period-tabs" id="periodTabs">
+                    <button class="period-tab" data-days="1" data-cursor-hover>24ч</button>
+                    <button class="period-tab active" data-days="7" data-cursor-hover>7д</button>
+                    <button class="period-tab" data-days="30" data-cursor-hover>30д</button>
+                    <button class="period-tab" data-days="90" data-cursor-hover>90д</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-price-info reveal">
+            <span class="chart-current-price" id="chartPrice">$—</span>
+            <span class="chart-price-change" id="chartChange">—</span>
+        </div>
+
+        <div class="chart-container reveal-scale">
+            <div class="chart-loading" id="chartLoading">
+                <div class="spinner"></div>
+            </div>
+            <canvas id="cryptoChart"></canvas>
+        </div>
+    </section>
+
+    <!-- ═══════════ MARQUEE ═══════════ -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <span class="marquee-text"><span class="filled">ВЕКТОР</span> · КРИПТОИНВЕСТИЦИИ ·</span>
+            <span class="marquee-text">НАДЁЖНОСТЬ · <span class="filled">ПРОЗРАЧНОСТЬ</span> ·</span>
+            <span class="marquee-text"><span class="filled">ВЕКТОР</span> · КРИПТОИНВЕСТИЦИИ ·</span>
+            <span class="marquee-text">НАДЁЖНОСТЬ · <span class="filled">ПРОЗРАЧНОСТЬ</span> ·</span>
+        </div>
+    </div>
+
+    <!-- ═══════════ ADVANTAGES ═══════════ -->
+    <section class="advantages" id="advantages">
+        <div class="section-label reveal">003 / Преимущества</div>
+        <h2 class="section-title reveal">Почему выбирают нас</h2>
+        <p class="section-desc reveal">Технологии институционального уровня, доступные каждому инвестору.</p>
+
+        <div class="advantages-grid">
+            <div class="advantage-card reveal">
+                <div class="advantage-icon">
+                    <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+                <h3 class="advantage-title">Мгновенное исполнение</h3>
+                <p class="advantage-desc">Ордера обрабатываются за миллисекунды. Прямое подключение к крупнейшим биржам мира.</p>
+            </div>
+            <div class="advantage-card reveal">
+                <div class="advantage-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3 class="advantage-title">Холодное хранение</h3>
+                <p class="advantage-desc">95% активов хранятся в офлайн-хранилищах с мультиподписью и страхованием.</p>
+            </div>
+            <div class="advantage-card reveal">
+                <div class="advantage-icon">
+                    <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <h3 class="advantage-title">Прозрачные тарифы</h3>
+                <p class="advantage-desc">Комиссия от 0.05%. Никаких скрытых платежей. Что видите — то и платите.</p>
+            </div>
+            <div class="advantage-card reveal">
+                <div class="advantage-icon">
+                    <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </div>
+                <h3 class="advantage-title">Профессиональная аналитика</h3>
+                <p class="advantage-desc">Графики, индикаторы и уведомления. Всё для принятия взвешенных решений.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ HOW IT WORKS ═══════════ -->
+    <section class="how-it-works" id="how">
+        <div class="section-label reveal">004 / Начало работы</div>
+        <h2 class="section-title reveal">Четыре шага к первой инвестиции</h2>
+        <p class="section-desc reveal">Начните инвестировать в криптовалюту за считанные минуты.</p>
+
+        <div class="steps">
+            <div class="step reveal">
+                <div class="step-number">01</div>
+                <h3 class="step-title">Регистрация</h3>
+                <p class="step-desc">Создайте аккаунт за 30 секунд. Только email и пароль для начала.</p>
+                <div class="step-line"></div>
+            </div>
+            <div class="step reveal">
+                <div class="step-number">02</div>
+                <h3 class="step-title">Верификация</h3>
+                <p class="step-desc">Пройдите быструю проверку личности. Обычно занимает менее 5 минут.</p>
+                <div class="step-line"></div>
+            </div>
+            <div class="step reveal">
+                <div class="step-number">03</div>
+                <h3 class="step-title">Пополнение</h3>
+                <p class="step-desc">Внесите средства банковской картой, переводом или криптовалютой.</p>
+                <div class="step-line"></div>
+            </div>
+            <div class="step reveal">
+                <div class="step-number">04</div>
+                <h3 class="step-title">Торговля</h3>
+                <p class="step-desc">Покупайте и продавайте более 200 криптовалют в один клик.</p>
+                <div class="step-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ SECURITY ═══════════ -->
+    <section class="security" id="security">
+        <div class="security-grid">
+            <div>
+                <div class="section-label reveal-left">005 / Безопасность</div>
+                <h2 class="section-title reveal-left">Ваши активы<br>под защитой</h2>
+                <p class="section-desc reveal-left">Многоуровневая система безопасности, соответствующая требованиям международных финансовых регуляторов.</p>
+
+                <div class="security-features">
+                    <div class="security-feature reveal-left">
+                        <div class="security-icon">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        </div>
+                        <div>
+                            <div class="security-feature-title">Шифрование AES-256</div>
+                            <p class="security-feature-desc">Военный стандарт шифрования для всех данных и транзакций.</p>
+                        </div>
+                    </div>
+                    <div class="security-feature reveal-left">
+                        <div class="security-icon">
+                            <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                        <div>
+                            <div class="security-feature-title">Двухфакторная аутентификация</div>
+                            <p class="security-feature-desc">Биометрия, SMS и аппаратные ключи для защиты аккаунта.</p>
+                        </div>
+                    </div>
+                    <div class="security-feature reveal-left">
+                        <div class="security-icon">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <div>
+                            <div class="security-feature-title">Глобальное страхование</div>
+                            <p class="security-feature-desc">Активы застрахованы на сумму до $250 млн через Lloyd's of London.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="security-visual reveal-right">
+                <div class="shield-graphic">
+                    <div class="shield-outline"></div>
+                    <div class="shield-inner"></div>
+                    <div class="shield-check">
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ STATS ═══════════ -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number" data-count="2.4" data-suffix="М">0</div>
+                <div class="stat-label">Пользователей</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="15.8" data-suffix="₿">0</div>
+                <div class="stat-label">Объём торгов / сут</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="99.98" data-suffix="%">0</div>
+                <div class="stat-label">Аптайм</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="200" data-suffix="+">0</div>
+                <div class="stat-label">Криптовалют</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ FEES ═══════════ -->
+    <section class="fees">
+        <div class="section-label reveal">006 / Тарифы</div>
+        <h2 class="section-title reveal">Простая и честная комиссия</h2>
+        <p class="section-desc reveal">Никаких скрытых платежей. Чем больше объём — тем ниже комиссия.</p>
+
+        <div class="fees-table-wrap reveal">
+            <div class="fees-row">
+                <span class="fees-label">Покупка / продажа криптовалюты</span>
+                <span class="fees-value">0.10%</span>
+            </div>
+            <div class="fees-row">
+                <span class="fees-label">Вывод на банковский счёт</span>
+                <span class="fees-value">Бесплатно</span>
+            </div>
+            <div class="fees-row">
+                <span class="fees-label">Хранение активов</span>
+                <span class="fees-value">0 ₽</span>
+            </div>
+            <div class="fees-row">
+                <span class="fees-label">Перевод между пользователями</span>
+                <span class="fees-value">Бесплатно</span>
+            </div>
+            <div class="fees-row">
+                <span class="fees-label">API-доступ для трейдеров</span>
+                <span class="fees-value">0.05%</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ CTA ═══════════ -->
+    <section class="cta-section">
+        <h2 class="cta-title reveal">Начните инвестировать<br><span style="color: var(--accent);">прямо сейчас</span></h2>
+        <p class="cta-desc reveal">Присоединяйтесь к 2.4 миллионам инвесторов, которые уже доверяют Вектору.</p>
+        <div class="cta-actions reveal">
+            <a href="#" class="btn-primary open-modal" data-cursor-hover>Оставить заявку</a>
+            <a href="#" class="btn-outline" data-cursor-hover>Связаться с нами</a>
+        </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer">
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <div class="logo-icon"></div>
+                ВЕКТОР
+            </div>
+            <p class="footer-desc">Криптовалютная платформа нового поколения. Лицензирована и регулируется.</p>
+        </div>
+
+        <div class="footer-links">
+            <div class="footer-col">
+                <h4>Продукт</h4>
+                <a href="#" data-cursor-hover>Торговля</a>
+                <a href="#" data-cursor-hover>Портфель</a>
+                <a href="#" data-cursor-hover>Стейкинг</a>
+                <a href="#" data-cursor-hover>API</a>
+            </div>
+            <div class="footer-col">
+                <h4>Компания</h4>
+                <a href="#" data-cursor-hover>О нас</a>
+                <a href="#" data-cursor-hover>Карьера</a>
+                <a href="#" data-cursor-hover>Блог</a>
+                <a href="#" data-cursor-hover>Контакты</a>
+            </div>
+            <div class="footer-col">
+                <h4>Поддержка</h4>
+                <a href="#" data-cursor-hover>Помощь</a>
+                <a href="#" data-cursor-hover>Документация</a>
+                <a href="#" data-cursor-hover>Статус системы</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2025 ВЕКТОР. Все права защищены.</span>
+            <span>Политика конфиденциальности · Условия использования</span>
+        </div>
+    </footer>
+
+    <!-- ═══════════ MODAL ═══════════ -->
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal__backdrop" id="modalBackdrop"></div>
+        <div class="modal__window">
+            <button class="modal__close" id="modalClose" aria-label="Закрыть">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+
+            <div class="modal__header">
+                <span class="modal__label">Консультация</span>
+                <h3 class="modal__title" id="modalTitle">Мы вам<br><span class="accent">перезвоним</span></h3>
+                <p class="modal__subtitle">Оставьте контакты — специалист свяжется с вами в течение 15 минут</p>
+            </div>
+
+            <form class="modal__form" id="modalForm" novalidate>
+                <div class="modal__field">
+                    <label class="modal__field-label" for="nameInput">Ваше имя</label>
+                    <input
+                        class="modal__input"
+                        type="text"
+                        id="nameInput"
+                        name="name"
+                        placeholder="Иван Иванов"
+                        autocomplete="name"
+                        maxlength="60"
+                    >
+                    <span class="modal__field-error" id="nameError"></span>
+                </div>
+
+                <div class="modal__field">
+                    <label class="modal__field-label" for="phoneInput">Номер телефона</label>
+                    <input
+                        class="modal__input"
+                        type="tel"
+                        id="phoneInput"
+                        name="phone"
+                        placeholder="+7 (___) ___-__-__"
+                        autocomplete="tel"
+                    >
+                    <span class="modal__field-error" id="phoneError"></span>
+                </div>
+
+                <button type="submit" class="modal__submit btn-primary">
+                    <span>Отправить заявку</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+
+                <p class="modal__privacy">Нажимая кнопку, вы соглашаетесь с&nbsp;<a href="#">политикой конфиденциальности</a></p>
+            </form>
+
+            <div class="modal__success" id="modalSuccess">
+                <div class="modal__success-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <h3 class="modal__success-title">Заявка принята!</h3>
+                <p class="modal__success-text">Мы свяжемся с вами в течение 15 минут</p>
+                <button class="btn-outline modal__success-close" id="modalSuccessClose">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
