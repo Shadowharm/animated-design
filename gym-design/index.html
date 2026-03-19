@@ -4,6 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ФОРМА — Фитнес-зал нового поколения</title>
+  <meta name="description" content="ФОРМА — премиальный фитнес-зал в Москве: персональные тренировки, групповые программы, кардио и силовая зона, сауна и хаммам. Первая тренировка бесплатно.">
+  <meta name="keywords" content="фитнес зал Москва, тренажерный зал, персональный тренер, групповые тренировки, абонемент в зал, фитнес клуб ФОРМА">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="ФОРМА">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="canonical" href="https://forma-gym.ru/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="ФОРМА">
+  <meta property="og:title" content="ФОРМА — Фитнес-зал нового поколения">
+  <meta property="og:description" content="Премиальный фитнес-зал в Москве: топовое оборудование, персональные тренеры и первая тренировка бесплатно.">
+  <meta property="og:url" content="https://forma-gym.ru/">
+  <meta property="og:image" content="https://forma-gym.ru/assets/optimized/banners/hero-main-d-1x.webp">
+  <meta property="og:image:alt" content="Фитнес-зал ФОРМА">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ФОРМА — Фитнес-зал нового поколения">
+  <meta name="twitter:description" content="Премиальный фитнес-зал в Москве с персональным подходом и первой бесплатной тренировкой.">
+  <meta name="twitter:image" content="https://forma-gym.ru/assets/optimized/banners/hero-main-d-1x.webp">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,6 +33,52 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
   <link rel="manifest" href="assets/site.webmanifest">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://forma-gym.ru/#website",
+          "url": "https://forma-gym.ru/",
+          "name": "ФОРМА",
+          "inLanguage": "ru-RU",
+          "description": "Фитнес-зал нового поколения в Москве"
+        },
+        {
+          "@type": "HealthClub",
+          "@id": "https://forma-gym.ru/#healthclub",
+          "name": "ФОРМА",
+          "url": "https://forma-gym.ru/",
+          "image": "https://forma-gym.ru/assets/optimized/banners/hero-main-d-1x.webp",
+          "telephone": "+7 (495) 123-45-67",
+          "email": "info@forma-gym.ru",
+          "priceRange": "₽₽",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "RU",
+            "addressLocality": "Москва",
+            "streetAddress": "ул. Спортивная, 12"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "06:00",
+              "closes": "23:59"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Saturday", "Sunday"],
+              "opens": "08:00",
+              "closes": "22:00"
+            }
+          ]
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
 
@@ -551,18 +618,25 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" itemscope itemtype="https://schema.org/HealthClub">
+    <meta itemprop="url" content="https://forma-gym.ru/">
+    <meta itemprop="priceRange" content="₽₽">
+    <meta itemprop="openingHours" content="Mo-Fr 06:00-23:59">
+    <meta itemprop="openingHours" content="Sa-Su 08:00-22:00">
     <div class="footer__top">
       <div class="footer__brand">
-        <span class="footer__logo">ФОРМА</span>
-        <p class="footer__tagline">Фитнес-зал нового поколения</p>
+        <span class="footer__logo" itemprop="name">ФОРМА</span>
+        <p class="footer__tagline" itemprop="description">Фитнес-зал нового поколения</p>
       </div>
       <div class="footer__cols">
         <div class="footer__col">
           <h4 class="footer__col-title">Контакты</h4>
-          <a href="tel:+74951234567" class="footer__link">+7 (495) 123-45-67</a>
-          <a href="mailto:info@forma-gym.ru" class="footer__link">info@forma-gym.ru</a>
-          <span class="footer__link">г. Москва, ул. Спортивная, 12</span>
+          <a href="tel:+74951234567" class="footer__link" itemprop="telephone">+7 (495) 123-45-67</a>
+          <a href="mailto:info@forma-gym.ru" class="footer__link" itemprop="email">info@forma-gym.ru</a>
+          <span class="footer__link" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <meta itemprop="addressCountry" content="RU">
+            <span itemprop="addressLocality">г. Москва</span>, <span itemprop="streetAddress">ул. Спортивная, 12</span>
+          </span>
         </div>
         <div class="footer__col">
           <h4 class="footer__col-title">Режим работы</h4>

@@ -1,6 +1,6 @@
 /* ===== CONFIG ===== */
 const FRAME_COUNT = 151;
-const FRAME_SPEED = 1.6;
+const FRAME_SPEED = 2;
 const FRAME_PATH = (i) => `frames/frame_${String(i).padStart(4, "0")}.webp`;
 
 /* ===== STATE ===== */

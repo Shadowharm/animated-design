@@ -4,6 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ВЕКТОР — Криптоинвестиции нового поколения</title>
+    <meta name="description" content="ВЕКТОР — платформа для покупки, продажи и хранения криптовалют с прозрачными комиссиями и профессиональной аналитикой в реальном времени.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="ВЕКТОР">
+    <meta name="theme-color" content="#08120f">
+    <link rel="canonical" href="/">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ВЕКТОР — Криптоинвестиции нового поколения">
+    <meta property="og:description" content="Покупайте, продавайте и храните криптовалюту с прозрачными комиссиями и профессиональной аналитикой.">
+    <meta property="og:site_name" content="ВЕКТОР">
+    <meta property="og:image" content="/og-image.svg">
+    <meta property="og:image:type" content="image/svg+xml">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ВЕКТОР — платформа криптоинвестиций">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ВЕКТОР — Криптоинвестиции нового поколения">
+    <meta name="twitter:description" content="Платформа для криптоинвестиций с аналитикой в реальном времени и прозрачными комиссиями.">
+    <meta name="twitter:image" content="/og-image.svg">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "@id": "/#organization",
+                    "name": "ВЕКТОР",
+                    "url": "/",
+                    "logo": "/og-image.svg",
+                    "description": "Криптовалютная платформа для торговли, хранения и аналитики цифровых активов."
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "/#website",
+                    "url": "/",
+                    "name": "ВЕКТОР",
+                    "inLanguage": "ru-RU",
+                    "publisher": {
+                        "@id": "/#organization"
+                    }
+                },
+                {
+                    "@type": "FinancialService",
+                    "@id": "/#service",
+                    "name": "ВЕКТОР",
+                    "url": "/",
+                    "description": "Платформа для покупки, продажи и хранения криптовалют с аналитикой в реальном времени.",
+                    "provider": {
+                        "@id": "/#organization"
+                    },
+                    "areaServed": "RU",
+                    "availableLanguage": [
+                        "ru"
+                    ],
+                    "serviceType": "Криптовалютные инвестиции"
+                }
+            ]
+        }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,7 +78,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
+    <meta itemprop="inLanguage" content="ru-RU">
+    <meta itemprop="name" content="ВЕКТОР — Криптоинвестиции нового поколения">
+    <meta itemprop="description" content="Платформа для криптоинвестиций с профессиональной аналитикой и прозрачными условиями.">
 
     <!-- Custom Cursor -->
     <div class="cursor-dot" id="cursorDot"></div>
@@ -44,7 +113,10 @@
     </header>
 
     <!-- ═══════════ HERO ═══════════ -->
-    <section class="hero">
+    <section class="hero" itemscope itemtype="https://schema.org/FinancialService">
+        <meta itemprop="name" content="ВЕКТОР">
+        <meta itemprop="serviceType" content="Криптовалютные инвестиции">
+        <meta itemprop="areaServed" content="RU">
         <div class="hero-aurora">
             <div class="aurora-orb aurora-orb--1"></div>
             <div class="aurora-orb aurora-orb--2"></div>
@@ -293,31 +365,32 @@
     </section>
 
     <!-- ═══════════ FEES ═══════════ -->
-    <section class="fees">
+    <section class="fees" itemscope itemtype="https://schema.org/OfferCatalog">
+        <meta itemprop="name" content="Тарифы ВЕКТОР">
         <div class="section-label reveal">006 / Тарифы</div>
         <h2 class="section-title reveal">Простая и честная комиссия</h2>
         <p class="section-desc reveal">Никаких скрытых платежей. Чем больше объём — тем ниже комиссия.</p>
 
         <div class="fees-table-wrap reveal">
-            <div class="fees-row">
-                <span class="fees-label">Покупка / продажа криптовалюты</span>
-                <span class="fees-value">0.10%</span>
+            <div class="fees-row" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                <span class="fees-label" itemprop="name">Покупка / продажа криптовалюты</span>
+                <span class="fees-value" itemprop="description">0.10%</span>
             </div>
-            <div class="fees-row">
-                <span class="fees-label">Вывод на банковский счёт</span>
-                <span class="fees-value">Бесплатно</span>
+            <div class="fees-row" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                <span class="fees-label" itemprop="name">Вывод на банковский счёт</span>
+                <span class="fees-value" itemprop="description">Бесплатно</span>
             </div>
-            <div class="fees-row">
-                <span class="fees-label">Хранение активов</span>
-                <span class="fees-value">0 ₽</span>
+            <div class="fees-row" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                <span class="fees-label" itemprop="name">Хранение активов</span>
+                <span class="fees-value" itemprop="description">0 ₽</span>
             </div>
-            <div class="fees-row">
-                <span class="fees-label">Перевод между пользователями</span>
-                <span class="fees-value">Бесплатно</span>
+            <div class="fees-row" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                <span class="fees-label" itemprop="name">Перевод между пользователями</span>
+                <span class="fees-value" itemprop="description">Бесплатно</span>
             </div>
-            <div class="fees-row">
-                <span class="fees-label">API-доступ для трейдеров</span>
-                <span class="fees-value">0.05%</span>
+            <div class="fees-row" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                <span class="fees-label" itemprop="name">API-доступ для трейдеров</span>
+                <span class="fees-value" itemprop="description">0.05%</span>
             </div>
         </div>
     </section>
@@ -333,37 +406,40 @@
     </section>
 
     <!-- ═══════════ FOOTER ═══════════ -->
-    <footer class="footer">
+    <footer class="footer" itemscope itemtype="https://schema.org/Organization">
+        <meta itemprop="name" content="ВЕКТОР">
+        <meta itemprop="url" content="/">
+        <meta itemprop="logo" content="/og-image.svg">
         <div class="footer-brand">
             <div class="footer-logo">
                 <div class="logo-icon"></div>
                 ВЕКТОР
             </div>
-            <p class="footer-desc">Криптовалютная платформа нового поколения. Лицензирована и регулируется.</p>
+            <p class="footer-desc" itemprop="description">Криптовалютная платформа нового поколения. Лицензирована и регулируется.</p>
         </div>
 
-        <div class="footer-links">
-            <div class="footer-col">
-                <h4>Продукт</h4>
-                <a href="#" data-cursor-hover>Торговля</a>
-                <a href="#" data-cursor-hover>Портфель</a>
-                <a href="#" data-cursor-hover>Стейкинг</a>
-                <a href="#" data-cursor-hover>API</a>
-            </div>
-            <div class="footer-col">
-                <h4>Компания</h4>
-                <a href="#" data-cursor-hover>О нас</a>
-                <a href="#" data-cursor-hover>Карьера</a>
-                <a href="#" data-cursor-hover>Блог</a>
-                <a href="#" data-cursor-hover>Контакты</a>
-            </div>
-            <div class="footer-col">
-                <h4>Поддержка</h4>
-                <a href="#" data-cursor-hover>Помощь</a>
-                <a href="#" data-cursor-hover>Документация</a>
-                <a href="#" data-cursor-hover>Статус системы</a>
-            </div>
-        </div>
+<!--        <div class="footer-links">-->
+<!--            <div class="footer-col">-->
+<!--                <h4>Продукт</h4>-->
+<!--                <a href="#" data-cursor-hover>Торговля</a>-->
+<!--                <a href="#" data-cursor-hover>Портфель</a>-->
+<!--                <a href="#" data-cursor-hover>Стейкинг</a>-->
+<!--                <a href="#" data-cursor-hover>API</a>-->
+<!--            </div>-->
+<!--            <div class="footer-col">-->
+<!--                <h4>Компания</h4>-->
+<!--                <a href="#" data-cursor-hover>О нас</a>-->
+<!--                <a href="#" data-cursor-hover>Карьера</a>-->
+<!--                <a href="#" data-cursor-hover>Блог</a>-->
+<!--                <a href="#" data-cursor-hover>Контакты</a>-->
+<!--            </div>-->
+<!--            <div class="footer-col">-->
+<!--                <h4>Поддержка</h4>-->
+<!--                <a href="#" data-cursor-hover>Помощь</a>-->
+<!--                <a href="#" data-cursor-hover>Документация</a>-->
+<!--                <a href="#" data-cursor-hover>Статус системы</a>-->
+<!--            </div>-->
+<!--        </div>-->
 
         <div class="footer-bottom">
             <span>© 2025 ВЕКТОР. Все права защищены.</span>
