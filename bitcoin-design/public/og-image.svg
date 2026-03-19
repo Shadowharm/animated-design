@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">ВЕКТОР — Криптоинвестиции нового поколения</title>
+  <desc id="desc">Open Graph изображение платформы ВЕКТОР</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04110c"/>
+      <stop offset="100%" stop-color="#0f2a1f"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22e39a"/>
+      <stop offset="100%" stop-color="#12b377"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1050" cy="120" r="180" fill="#22e39a" fill-opacity="0.12"/>
+  <circle cx="130" cy="560" r="220" fill="#22e39a" fill-opacity="0.08"/>
+
+  <rect x="92" y="68" width="130" height="10" rx="5" fill="url(#accent)"/>
+  <text x="92" y="160" fill="#e8fff6" font-size="88" font-weight="800" font-family="Manrope, Arial, sans-serif">ВЕКТОР</text>
+  <text x="92" y="238" fill="#a6dec4" font-size="40" font-weight="500" font-family="Manrope, Arial, sans-serif">Криптоинвестиции нового поколения</text>
+
+  <g transform="translate(92 320)">
+    <rect x="0" y="0" width="1016" height="220" rx="24" fill="#0f231b" stroke="#2dbf86" stroke-opacity="0.45"/>
+    <text x="48" y="78" fill="#f2fff9" font-size="38" font-weight="700" font-family="Manrope, Arial, sans-serif">Платформа для покупки, продажи и хранения</text>
+    <text x="48" y="138" fill="#9fd8be" font-size="30" font-weight="500" font-family="Manrope, Arial, sans-serif">Прозрачные комиссии • Аналитика • Безопасность</text>
+  </g>
+</svg>

@@ -21,235 +21,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="479c5765-4e58-43a2-b0f2-f7999d2e6f17" name="Changes" comment="feat: add favicons and web manifest for improved user experience">
-      <change afterPath="$PROJECT_DIR$/bitcoin-design/public/assets/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bitcoin-design/public/assets/android-chrome-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bitcoin-design/public/assets/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bitcoin-design/public/assets/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bitcoin-design/public/assets/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bitcoin-design/public/assets/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bitcoin-design/public/assets/site.webmanifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone-design/assets/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone-design/assets/android-chrome-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone-design/assets/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone-design/assets/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone-design/assets/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone-design/assets/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone-design/assets/site.webmanifest" afterDir="false" />
+    <list default="true" id="479c5765-4e58-43a2-b0f2-f7999d2e6f17" name="Changes" comment="chore: remove unused tech-design module and assets, add favicons and seo optimize">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitcoin-design/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bitcoin-design/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym-design/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gym-design/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone-design/.claude/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/iphone-design/.claude/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone-design/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/iphone-design/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone-design/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/iphone-design/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/.claude/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0001.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0002.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0003.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0004.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0005.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0006.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0007.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0008.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0009.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0010.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0011.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0012.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0013.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0014.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0015.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0016.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0017.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0018.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0019.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0020.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0021.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0022.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0023.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0024.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0025.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0026.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0027.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0028.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0029.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0030.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0031.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0032.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0033.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0034.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0035.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0036.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0037.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0038.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0039.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0040.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0041.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0042.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0043.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0044.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0045.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0046.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0047.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0048.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0049.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0050.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0051.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0052.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0053.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0054.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0055.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0056.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0057.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0058.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0059.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0060.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0061.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0062.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0063.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0064.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0065.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0066.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0067.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0068.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0069.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0070.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0071.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0072.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0073.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0074.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0075.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0076.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0077.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0078.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0079.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0080.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0081.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0082.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0083.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0084.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0085.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0086.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0087.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0088.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0089.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0090.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0091.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0092.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0093.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0094.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0095.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0096.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0097.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0098.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0099.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0100.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0101.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0102.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0103.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0104.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0105.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0106.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0107.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0108.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0109.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0110.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0111.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0112.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0113.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0114.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0115.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0116.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0117.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0118.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0119.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0120.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0121.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0122.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0123.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0124.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0125.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0126.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0127.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0128.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0129.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0130.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0131.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0132.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0133.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0134.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0135.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0136.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0137.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0138.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0139.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0140.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0141.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0142.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0143.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0144.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0145.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0146.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0147.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0148.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0149.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0150.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0151.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0152.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0153.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0154.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0155.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0156.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0157.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0158.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0159.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0160.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0161.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0162.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0163.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0164.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0165.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0166.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0167.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0168.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0169.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0170.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0171.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0172.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0173.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0174.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0175.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0176.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0177.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0178.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0179.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0180.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0181.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0182.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0183.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0184.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0185.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0186.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0187.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0188.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0189.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0190.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0191.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0192.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0193.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0194.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0195.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0196.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0197.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0198.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0199.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/frames/frame_0200.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tech-design/video.mp4" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,7 +113,7 @@
       <updated>1773675250996</updated>
       <workItem from="1773675252165" duration="5487000" />
       <workItem from="1773727422811" duration="20838000" />
-      <workItem from="1773921488746" duration="1637000" />
+      <workItem from="1773921488746" duration="2366000" />
     </task>
     <task id="LOCAL-00001" summary="add iphone design">
       <option name="closed" value="true" />
@@ -414,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773921509330</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="chore: remove unused tech-design module and assets, add favicons and seo optimize">
+      <option name="closed" value="true" />
+      <created>1773923193050</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1773923193050</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,7 +225,8 @@
     <MESSAGE value="feat: add cryptocurrency API routes and landing page design" />
     <MESSAGE value="feat: implement responsive image optimization for better performance and updated assets" />
     <MESSAGE value="feat: add favicons and web manifest for improved user experience" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add favicons and web manifest for improved user experience" />
+    <MESSAGE value="chore: remove unused tech-design module and assets, add favicons and seo optimize" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: remove unused tech-design module and assets, add favicons and seo optimize" />
     <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
   </component>
 </project>
