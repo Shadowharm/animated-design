@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#0d0d12"/>
+    </linearGradient>
+
+    <!-- Purple orb -->
+    <radialGradient id="orb1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Blue orb -->
+    <radialGradient id="orb2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Title gradient -->
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+
+    <!-- Dot pattern -->
+    <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#ffffff" fill-opacity="0.04"/>
+    </pattern>
+
+    <!-- Border gradient -->
+    <linearGradient id="borderGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#8b5cf6" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#3b82f6" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Soft blur for orbs -->
+    <filter id="orbBlur">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+  </defs>
+
+  <!-- Base background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Dot grid -->
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- Background orbs -->
+  <ellipse cx="200" cy="150" rx="380" ry="320" fill="url(#orb1)" filter="url(#orbBlur)"/>
+  <ellipse cx="1050" cy="480" rx="340" ry="280" fill="url(#orb2)" filter="url(#orbBlur)"/>
+  <ellipse cx="900" cy="120" rx="200" ry="160" fill="url(#orb1)" filter="url(#orbBlur)" opacity="0.5"/>
+
+  <!-- Top border accent line -->
+  <rect x="0" y="0" width="1200" height="1" fill="url(#borderGrad)"/>
+
+  <!-- Bottom border accent line -->
+  <rect x="0" y="629" width="1200" height="1" fill="url(#borderGrad)"/>
+
+  <!-- Decorative corner — top left -->
+  <line x1="60" y1="60" x2="120" y2="60" stroke="#8b5cf6" stroke-width="1" stroke-opacity="0.5"/>
+  <line x1="60" y1="60" x2="60" y2="120" stroke="#8b5cf6" stroke-width="1" stroke-opacity="0.5"/>
+
+  <!-- Decorative corner — top right -->
+  <line x1="1140" y1="60" x2="1080" y2="60" stroke="#3b82f6" stroke-width="1" stroke-opacity="0.5"/>
+  <line x1="1140" y1="60" x2="1140" y2="120" stroke="#3b82f6" stroke-width="1" stroke-opacity="0.5"/>
+
+  <!-- Decorative corner — bottom left -->
+  <line x1="60" y1="570" x2="120" y2="570" stroke="#8b5cf6" stroke-width="1" stroke-opacity="0.5"/>
+  <line x1="60" y1="570" x2="60" y2="510" stroke="#8b5cf6" stroke-width="1" stroke-opacity="0.5"/>
+
+  <!-- Decorative corner — bottom right -->
+  <line x1="1140" y1="570" x2="1080" y2="570" stroke="#3b82f6" stroke-width="1" stroke-opacity="0.5"/>
+  <line x1="1140" y1="570" x2="1140" y2="510" stroke="#3b82f6" stroke-width="1" stroke-opacity="0.5"/>
+
+  <!-- Floating particles -->
+  <circle cx="160" cy="310" r="2" fill="#a78bfa" opacity="0.6"/>
+  <circle cx="340" cy="480" r="1.5" fill="#60a5fa" opacity="0.5"/>
+  <circle cx="520" cy="120" r="2.5" fill="#8b5cf6" opacity="0.4"/>
+  <circle cx="780" cy="540" r="2" fill="#a78bfa" opacity="0.5"/>
+  <circle cx="960" cy="200" r="1.5" fill="#60a5fa" opacity="0.6"/>
+  <circle cx="1080" cy="350" r="2" fill="#8b5cf6" opacity="0.4"/>
+  <circle cx="440" cy="570" r="1.5" fill="#a78bfa" opacity="0.3"/>
+  <circle cx="700" cy="80" r="2" fill="#60a5fa" opacity="0.4"/>
+  <line x1="160" y1="310" x2="340" y2="480" stroke="#a78bfa" stroke-width="0.5" stroke-opacity="0.12"/>
+  <line x1="520" y1="120" x2="700" y2="80" stroke="#60a5fa" stroke-width="0.5" stroke-opacity="0.12"/>
+  <line x1="780" y1="540" x2="960" y2="200" stroke="#8b5cf6" stroke-width="0.5" stroke-opacity="0.1"/>
+
+  <!-- Badge pill -->
+  <rect x="540" y="165" width="120" height="26" rx="13" fill="#8b5cf6" fill-opacity="0.12" stroke="#8b5cf6" stroke-opacity="0.3" stroke-width="1"/>
+  <circle cx="558" cy="178" r="3.5" fill="#a78bfa"/>
+  <text x="570" y="183" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#a78bfa" letter-spacing="1.5">ДИЗАЙН-СТУДИЯ</text>
+
+  <!-- Main title: Mindexa -->
+  <text x="600" y="282" font-family="system-ui, -apple-system, 'Helvetica Neue', sans-serif"
+        font-size="96" font-weight="800" text-anchor="middle"
+        fill="url(#titleGrad)" filter="url(#glow)" letter-spacing="-2">Mindexa</text>
+
+  <!-- Main title: Design (white, lighter weight) -->
+  <text x="600" y="370" font-family="system-ui, -apple-system, 'Helvetica Neue', sans-serif"
+        font-size="96" font-weight="300" text-anchor="middle"
+        fill="#ffffff" opacity="0.85" letter-spacing="-1">Design</text>
+
+  <!-- Divider line -->
+  <rect x="480" y="400" width="240" height="1" fill="url(#borderGrad)" opacity="0.6"/>
+
+  <!-- Tagline -->
+  <text x="600" y="444" font-family="system-ui, -apple-system, sans-serif"
+        font-size="19" font-weight="400" text-anchor="middle"
+        fill="#ffffff" opacity="0.35" letter-spacing="0.3">Создаём сайты, которые выглядят дорого</text>
+
+  <!-- Bottom url -->
+  <text x="600" y="558" font-family="system-ui, -apple-system, sans-serif"
+        font-size="14" font-weight="400" text-anchor="middle"
+        fill="#8b5cf6" opacity="0.5" letter-spacing="1">mindexa-design.ru</text>
+</svg>

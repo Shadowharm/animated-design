@@ -304,6 +304,15 @@ ul {
   opacity: 0;
 }
 
+.case-legal-note {
+  margin: -24px 0 20px;
+  max-width: 420px;
+  font-size: 10px;
+  line-height: 1.4;
+  color: var(--text-muted);
+  opacity: 0.42;
+}
+
 .hero__actions {
   display: flex;
   gap: 16px;
@@ -1452,6 +1461,15 @@ a.footer__link:hover {
   color: var(--text-secondary);
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+.modal__disclaimer {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.4;
+  margin-top: -12px;
+  opacity: 0.4;
 }
 
 /* Success state */

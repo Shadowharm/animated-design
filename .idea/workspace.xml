@@ -21,8 +21,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="479c5765-4e58-43a2-b0f2-f7999d2e6f17" name="Changes" comment="chore: remove unused tech-design module and assets, add favicons and seo optimize">
+    <list default="true" id="479c5765-4e58-43a2-b0f2-f7999d2e6f17" name="Changes" comment="feat: add Open Graph image for bitcoin-design">
+      <change afterPath="$PROJECT_DIR$/portfolio/public/assets/forma.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/public/assets/smartphone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/public/assets/vector.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcoin-design/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/bitcoin-design/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcoin-design/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bitcoin-design/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym-design/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/gym-design/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym-design/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gym-design/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iphone-design/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/iphone-design/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iphone-design/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/iphone-design/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +105,9 @@
       <recent name="$PROJECT_DIR$/gym-design/assets" />
       <recent name="$PROJECT_DIR$/iphone-design" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/portfolio/public" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -113,7 +125,7 @@
       <updated>1773675250996</updated>
       <workItem from="1773675252165" duration="5487000" />
       <workItem from="1773727422811" duration="20838000" />
-      <workItem from="1773921488746" duration="2366000" />
+      <workItem from="1773921488746" duration="10346000" />
     </task>
     <task id="LOCAL-00001" summary="add iphone design">
       <option name="closed" value="true" />
@@ -195,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773923193050</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: add Open Graph image for bitcoin-design">
+      <option name="closed" value="true" />
+      <created>1773924432364</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1773924432364</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +246,8 @@
     <MESSAGE value="feat: implement responsive image optimization for better performance and updated assets" />
     <MESSAGE value="feat: add favicons and web manifest for improved user experience" />
     <MESSAGE value="chore: remove unused tech-design module and assets, add favicons and seo optimize" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: remove unused tech-design module and assets, add favicons and seo optimize" />
+    <MESSAGE value="feat: add Open Graph image for bitcoin-design" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add Open Graph image for bitcoin-design" />
     <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
   </component>
 </project>

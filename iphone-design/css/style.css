@@ -204,6 +204,14 @@ nav {
   transform: translateY(20px);
 }
 
+.case-legal-note {
+  margin-top: 14px;
+  font-size: 10px;
+  line-height: 1.4;
+  color: var(--text-tertiary);
+  opacity: 0.5;
+}
+
 .scroll-indicator {
   position: absolute;
   bottom: 3rem;
