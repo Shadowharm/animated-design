@@ -15,7 +15,8 @@
 
   let loadProgress = 0
   const loadInterval = setInterval(() => {
-    loadProgress += Math.random() * 25 + 5
+    loadProgress += 5
+    // loadProgress += Math.random() * 25 + 5
     if (loadProgress >= 100) {
       loadProgress = 100
       clearInterval(loadInterval)
@@ -23,7 +24,7 @@
     }
     loaderProgress.style.width = loadProgress + '%'
     loaderPercent.textContent = Math.round(loadProgress) + '%'
-  }, 200)
+  }, 10)
 
   function finishLoading() {
     gsap.to(loader, {
