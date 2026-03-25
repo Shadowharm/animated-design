@@ -21,14 +21,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="479c5765-4e58-43a2-b0f2-f7999d2e6f17" name="Changes" comment="feat: add initial portfolio landing page with SEO optimizations, animations, and structured data">
-      <change afterPath="$PROJECT_DIR$/portfolio/public/assets/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/public/assets/android-chrome-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/public/assets/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/public/assets/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/public/assets/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/public/assets/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/public/assets/site.webmanifest" afterDir="false" />
+    <list default="true" id="479c5765-4e58-43a2-b0f2-f7999d2e6f17" name="Changes" comment="feat: add favicons and web manifest for portfolio project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +31,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="593" />
+    <option name="cachedIndexableFilesCount" value="419" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
@@ -71,31 +65,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "JavaScript Debug.localhost:3847.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Users/max.prokhorov/github-projects/animated-design/portfolio/public/assets",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;JavaScript Debug.localhost:3847.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/max.prokhorov/github-projects/animated-design/portfolio/public/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/portfolio/public/assets" />
@@ -124,7 +118,8 @@
       <updated>1773675250996</updated>
       <workItem from="1773675252165" duration="5487000" />
       <workItem from="1773727422811" duration="20838000" />
-      <workItem from="1773921488746" duration="10980000" />
+      <workItem from="1773921488746" duration="11159000" />
+      <workItem from="1774440615719" duration="21000" />
     </task>
     <task id="LOCAL-00001" summary="add iphone design">
       <option name="closed" value="true" />
@@ -222,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773938132770</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: add favicons and web manifest for portfolio project">
+      <option name="closed" value="true" />
+      <created>1773938940441</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1773938940441</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +259,8 @@
     <MESSAGE value="feat: add Open Graph image for bitcoin-design" />
     <MESSAGE value="feat: add new portfolio website with animations, custom cursor, and smooth scroll effects" />
     <MESSAGE value="feat: add initial portfolio landing page with SEO optimizations, animations, and structured data" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add initial portfolio landing page with SEO optimizations, animations, and structured data" />
+    <MESSAGE value="feat: add favicons and web manifest for portfolio project" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add favicons and web manifest for portfolio project" />
     <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
   </component>
 </project>
