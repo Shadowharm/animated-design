@@ -21,7 +21,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="479c5765-4e58-43a2-b0f2-f7999d2e6f17" name="Changes" comment="feat: update contact email across portfolio website">
+    <list default="true" id="479c5765-4e58-43a2-b0f2-f7999d2e6f17" name="Changes" comment="feat: add Yandex.Metrika integration to portfolio project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/public/index.html" afterDir="false" />
     </list>
@@ -119,7 +119,7 @@
       <workItem from="1773675252165" duration="5487000" />
       <workItem from="1773727422811" duration="20838000" />
       <workItem from="1773921488746" duration="11159000" />
-      <workItem from="1774440615719" duration="2846000" />
+      <workItem from="1774440615719" duration="3395000" />
     </task>
     <task id="LOCAL-00001" summary="add iphone design">
       <option name="closed" value="true" />
@@ -241,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774442175520</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat: add Yandex.Metrika integration to portfolio project">
+      <option name="closed" value="true" />
+      <created>1774528516605</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1774528516605</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +285,8 @@
     <MESSAGE value="feat: add initial portfolio landing page with SEO optimizations, animations, and structured data" />
     <MESSAGE value="feat: add favicons and web manifest for portfolio project" />
     <MESSAGE value="feat: update contact email across portfolio website" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update contact email across portfolio website" />
+    <MESSAGE value="feat: add Yandex.Metrika integration to portfolio project" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add Yandex.Metrika integration to portfolio project" />
     <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
   </component>
 </project>
