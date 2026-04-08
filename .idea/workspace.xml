@@ -21,11 +21,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="479c5765-4e58-43a2-b0f2-f7999d2e6f17" name="Changes" comment="feat: add Google Tag Manager integration to portfolio project">
+    <list default="true" id="479c5765-4e58-43a2-b0f2-f7999d2e6f17" name="Changes" comment="feat: implement pricing section with animations and styling updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/public/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +120,7 @@
       <workItem from="1773727422811" duration="20838000" />
       <workItem from="1773921488746" duration="11159000" />
       <workItem from="1774440615719" duration="3727000" />
-      <workItem from="1775643606065" duration="3032000" />
+      <workItem from="1775643606065" duration="3414000" />
     </task>
     <task id="LOCAL-00001" summary="add iphone design">
       <option name="closed" value="true" />
@@ -260,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774529080396</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat: implement pricing section with animations and styling updates">
+      <option name="closed" value="true" />
+      <created>1775650840844</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1775650840844</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +304,8 @@
     <MESSAGE value="feat: update contact email across portfolio website" />
     <MESSAGE value="feat: add Yandex.Metrika integration to portfolio project" />
     <MESSAGE value="feat: add Google Tag Manager integration to portfolio project" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add Google Tag Manager integration to portfolio project" />
+    <MESSAGE value="feat: implement pricing section with animations and styling updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implement pricing section with animations and styling updates" />
     <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
   </component>
 </project>
