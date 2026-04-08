@@ -93,6 +93,10 @@ a, button, input, textarea, select,
 }
 
 /* --- Hero --- */
+.hero-label, .hero-title, .hero-sub, .hero-cta {
+  opacity: 0;
+}
+
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -156,18 +160,42 @@ a, button, input, textarea, select,
   background-clip: text;
 }
 
-/* --- Cases image parallax --- */
-.case-image-wrap {
-  position: relative;
+/* --- Pricing --- */
+.pricing-featured {
+  background: linear-gradient(145deg, rgba(139,92,246,0.12) 0%, rgba(15,12,30,1) 60%);
+  border-color: rgba(139,92,246,0.35);
 }
 
-.case-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;    /* natural proportions — no side cropping */
-  display: block;
+/* Мобильные отступы между карточками и блоками внутри */
+.pricing-grid {
+  gap: 1.5rem;
+}
+.pricing-block {
+  padding-bottom: 1.25rem;
+}
+.pricing-block:last-child {
+  padding-bottom: 0;
+}
+
+/* Subgrid: выравниваем блоки карточек по строкам */
+@media (min-width: 768px) {
+  .pricing-grid {
+    row-gap: 0;
+    column-gap: 1.5rem;
+    align-items: start;
+  }
+  .pricing-card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 5;
+  }
+  .pricing-block {
+    padding-bottom: 1.5rem;
+  }
+  .pricing-block:last-child {
+    padding-bottom: 0;
+    align-self: end;
+  }
 }
 
 /* --- Cases Parallax Glow --- */

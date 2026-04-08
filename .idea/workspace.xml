@@ -21,14 +21,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="479c5765-4e58-43a2-b0f2-f7999d2e6f17" name="Changes" comment="feat: add Google Tag Manager integration to portfolio project" />
+    <list default="true" id="479c5765-4e58-43a2-b0f2-f7999d2e6f17" name="Changes" comment="feat: add Google Tag Manager integration to portfolio project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/public/js/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="419" />
+    <option name="cachedIndexableFilesCount" value="420" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
@@ -117,6 +122,7 @@
       <workItem from="1773727422811" duration="20838000" />
       <workItem from="1773921488746" duration="11159000" />
       <workItem from="1774440615719" duration="3727000" />
+      <workItem from="1775643606065" duration="3032000" />
     </task>
     <task id="LOCAL-00001" summary="add iphone design">
       <option name="closed" value="true" />

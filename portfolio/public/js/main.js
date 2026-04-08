@@ -178,10 +178,10 @@ document.addEventListener('mousemove', (e) => {
 // Hero entrance
 const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 heroTl
-  .from('.hero-label', { opacity: 0, y: 20, duration: 0.8, delay: 0.3 })
-  .from('.hero-title', { opacity: 0, y: 40, duration: 1 }, '-=0.4')
-  .from('.hero-sub', { opacity: 0, y: 20, duration: 0.8 }, '-=0.5')
-  .from('.hero-cta', { opacity: 0, y: 20, duration: 0.8 }, '-=0.4');
+  .fromTo('.hero-label', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.8 }, 0.3)
+  .fromTo('.hero-title', { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 1 }, '-=0.4')
+  .fromTo('.hero-sub', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.8 }, '-=0.5')
+  .fromTo('.hero-cta', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.8 }, '-=0.4');
 
 // Nav scroll behavior
 const nav = document.querySelector('nav');
@@ -205,84 +205,80 @@ gsap.from('nav', { opacity: 0, duration: 0.8, delay: 1.2 });
 
 // Cases header
 gsap.from('.case-header', {
-  scrollTrigger: { trigger: '.case-header', start: 'top 85%' },
-  opacity: 0, y: 40, duration: 0.8,
+  scrollTrigger: { trigger: '.case-header', start: 'top 100%' },
+  opacity: 0, y: 30, duration: 0.6,
 });
 
 // Case cards
 document.querySelectorAll('.case-card').forEach((card, i) => {
   gsap.from(card, {
-    scrollTrigger: { trigger: card, start: 'top 85%' },
-    opacity: 0, y: 60, duration: 0.9, delay: i * 0.1,
+    scrollTrigger: { trigger: card, start: 'top 100%' },
+    opacity: 0, y: 40, duration: 0.6, delay: i * 0.08,
   });
+});
 
-  // Parallax: starts when card enters view (header visible), ends when card leaves.
-  // Image is natural height (~675px), container is 480px → ~195px of travel room.
-  const img = card.querySelector('.case-img');
-  gsap.fromTo(img,
-    { yPercent: 0 },
-    {
-      scrollTrigger: {
-        trigger: card,
-        start: 'top 92%',   // card just entered viewport — show header
-        end: 'bottom 8%',   // card about to leave — show bottom
-        scrub: 2,
-      },
-      yPercent: -22,
-      ease: 'none',
-    }
-  );
+// Pricing section
+gsap.from('.pricing-header', {
+  scrollTrigger: { trigger: '.pricing-header', start: 'top 100%' },
+  opacity: 0, y: 30, duration: 0.6,
+});
+
+document.querySelectorAll('.pricing-card').forEach((card, i) => {
+  gsap.from(card, {
+    scrollTrigger: { trigger: card, start: 'top 105%' },
+    opacity: 0, y: 40, duration: 0.6, delay: i * 0.08,
+  });
 });
 
 // Why section
 gsap.from('.why-header', {
-  scrollTrigger: { trigger: '.why-header', start: 'top 85%' },
-  opacity: 0, y: 40, duration: 0.8,
+  scrollTrigger: { trigger: '.why-header', start: 'top 100%' },
+  opacity: 0, y: 30, duration: 0.6,
 });
 
 document.querySelectorAll('.why-card').forEach((card, i) => {
   gsap.from(card, {
-    scrollTrigger: { trigger: card, start: 'top 90%' },
-    opacity: 0, y: 40, duration: 0.7, delay: i * 0.08,
+    scrollTrigger: { trigger: card, start: 'top 105%' },
+    opacity: 0, y: 30, duration: 0.5, delay: i * 0.06,
   });
 });
 
 // Approach section
 gsap.from('.approach-header', {
-  scrollTrigger: { trigger: '.approach-header', start: 'top 85%' },
-  opacity: 0, y: 40, duration: 0.8,
+  scrollTrigger: { trigger: '.approach-header', start: 'top 100%' },
+  opacity: 0, y: 30, duration: 0.6,
 });
 
 document.querySelectorAll('.approach-step').forEach((step, i) => {
   gsap.from(step, {
-    scrollTrigger: { trigger: step, start: 'top 90%' },
-    opacity: 0, y: 30, duration: 0.6, delay: i * 0.1,
+    scrollTrigger: { trigger: step, start: 'top 105%' },
+    opacity: 0, y: 20, duration: 0.5, delay: i * 0.07,
   });
 });
 
 // Design matters
 gsap.from('.design-matters-content', {
-  scrollTrigger: { trigger: '.design-matters-content', start: 'top 80%' },
-  opacity: 0, y: 40, duration: 0.8,
+  scrollTrigger: { trigger: '.design-matters-content', start: 'top 100%' },
+  opacity: 0, y: 30, duration: 0.6,
 });
 
 document.querySelectorAll('.design-stat').forEach((stat, i) => {
   gsap.from(stat, {
-    scrollTrigger: { trigger: stat, start: 'top 90%' },
-    opacity: 0, y: 30, scale: 0.95, duration: 0.6, delay: i * 0.12,
+    scrollTrigger: { trigger: stat, start: 'top 105%' },
+    opacity: 0, y: 20, scale: 0.97, duration: 0.5, delay: i * 0.08,
   });
 });
 
 // Team
 gsap.from('.team-content', {
-  scrollTrigger: { trigger: '.team-content', start: 'top 80%' },
-  opacity: 0, y: 40, duration: 0.8,
+  scrollTrigger: { trigger: '.team-content', start: 'top 100%' },
+  opacity: 0, y: 30, duration: 0.6,
 });
 
 // CTA
 gsap.from('.cta-content', {
-  scrollTrigger: { trigger: '.cta-content', start: 'top 80%' },
-  opacity: 0, y: 40, duration: 0.8,
+  scrollTrigger: { trigger: '.cta-content', start: 'top 100%' },
+  opacity: 0, y: 30, duration: 0.6,
 });
 
 // --- Copy buttons ---
