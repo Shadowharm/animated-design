@@ -322,3 +322,37 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 });
 
 
+function collectData() {
+  return {
+    userAgent: navigator.userAgent,
+    platform: navigator.platform,
+    language: navigator.language,
+
+    screenWidth: screen.width,
+    screenHeight: screen.height,
+
+    viewportWidth: window.innerWidth,
+    viewportHeight: window.innerHeight,
+
+    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+
+    url: window.location.href,
+    referrer: document.referrer,
+  };
+}
+
+async function sendTracking() {
+  try {
+    await fetch('https://mindexa-design.ru/track', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(collectData()),
+    });
+  } catch (e) {
+    console.error('Tracking failed', e);
+  }
+}
+
+// вызывать при загрузке
+sendTracking();
+

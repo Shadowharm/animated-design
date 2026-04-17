@@ -23,7 +23,10 @@
   <component name="ChangeListManager">
     <list default="true" id="479c5765-4e58-43a2-b0f2-f7999d2e6f17" name="Changes" comment="feat: implement pricing section with animations and styling updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/public/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +124,7 @@
       <workItem from="1773921488746" duration="11159000" />
       <workItem from="1774440615719" duration="3727000" />
       <workItem from="1775643606065" duration="3414000" />
+      <workItem from="1776428370408" duration="1771000" />
     </task>
     <task id="LOCAL-00001" summary="add iphone design">
       <option name="closed" value="true" />

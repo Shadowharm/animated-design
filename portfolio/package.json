@@ -7,7 +7,8 @@
     "dev": "nodemon --env-file=.env --watch server.js"
   },
   "dependencies": {
-    "express": "^4.21.0"
+    "express": "^4.21.0",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
